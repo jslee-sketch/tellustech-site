@@ -311,6 +311,10 @@ textarea.fc{min-height:120px;resize:vertical}
   .sarr{display:none}
   .frow{grid-template-columns:1fr}
 }
+/* ── Back to Top ── */
+#totop{position:fixed;bottom:32px;right:32px;z-index:999;width:46px;height:46px;background:var(--red);color:#fff;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(224,0,37,.4);opacity:0;pointer-events:none;transition:opacity .3s,transform .3s,background .2s;font-size:20px;}
+#totop.show{opacity:1;pointer-events:all;}
+#totop:hover{background:var(--red-lt);transform:translateY(-3px);}
 </style>
 </head>
 <body class="lang-en">
@@ -717,6 +721,9 @@ textarea.fc{min-height:120px;resize:vertical}
 </section>
 
 <!-- FOOTER -->
+<!-- Back to Top -->
+<button id="totop" onclick="scrollToId('hero')" title="홈으로">&#8679;</button>
+
 <footer id="footer">
   <div class="wrap">
     <div class="ft">
@@ -787,6 +794,12 @@ function scrollToId(id) {
   const top = el.getBoundingClientRect().top + window.scrollY - 72;
   window.scrollTo({ top: top, behavior: 'smooth' });
 }
+
+// ── Back to Top ───────────────────────────────────────────
+const totop = document.getElementById('totop');
+window.addEventListener('scroll', function() {
+  totop.classList.toggle('show', window.scrollY > 400);
+}, {passive:true});
 
 // ── All internal anchor links ─────────────────────────────
 document.querySelectorAll('a[href^="#"]').forEach(function(link) {
