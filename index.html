@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tellustech Co., Ltd. | Test &amp; Measurement | RF Cable | Calibration</title>
+<meta name="description" content="Tellustech provides test &amp; measurement equipment, RF cable assemblies, calibration services, network systems, and multifunction printers in Korea and Vietnam.">
+<meta property="og:title" content="Tellustech Co., Ltd.">
+<meta property="og:description" content="Test &amp; Measurement | RF Cable | Calibration Lab | Korea &amp; Vietnam">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tellustech.com">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Tellustech Co., Ltd.","alternateName":"텔러스테크","url":"https://tellustech.com","email":"sales@tellustech.co.kr","telephone":["+82-70-7092-0150","+84-222-387-1984"],"foundingDate":"2010","areaServed":["KR","VN"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#e00025;--red-lt:#ff1a3c;
+  --dark:#111318;--dark2:#1c1f27;--mid:#3a3d47;--gray:#6b6f7a;
+  --light:#f4f5f7;--white:#fff;--border:#e0e2e8;
+  --en:'Barlow',sans-serif;--kr:'Noto Sans KR',sans-serif;
+  --max:1200px;--nh:72px;
+  --ease:cubic-bezier(.25,.46,.45,.94);--eout:cubic-bezier(.16,1,.3,1);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--en);color:var(--dark);background:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body.lang-kr{font-family:var(--kr)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+ul{list-style:none}
+button{cursor:pointer;border:none;background:none;font:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+
+/* LANG */
+[data-l]{display:none}
+body.lang-en [data-l="en"],body.lang-kr [data-l="kr"],body.lang-vn [data-l="vn"]{display:inline}
+
+/* NAV */
+#nav{position:fixed;top:0;left:0;right:0;z-index:1000;height:var(--nh);display:flex;align-items:center;transition:background .4s,box-shadow .4s}
+#nav.on{background:rgba(17,19,24,.97);backdrop-filter:blur(12px);box-shadow:0 2px 24px rgba(0,0,0,.3)}
+.ni{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:var(--max);margin:0 auto;padding:0 24px}
+.logo img{height:34px;width:auto;transition:filter .4s}
+#nav:not(.on) .logo img{filter:brightness(0) invert(1)}
+#nav.on .logo img{filter:none;drop-shadow(0 0 0 transparent)}
+.nm{display:flex;align-items:center}
+.ni-item{position:relative}
+.nl{display:block;padding:8px 12px;color:rgba(255,255,255,.82);font-size:13px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;transition:color .2s}
+.nl:hover{color:#fff}
+.ni-item:hover .drop{opacity:1;pointer-events:all;transform:translateX(-50%) translateY(0)}
+.drop{position:absolute;top:100%;left:50%;transform:translateX(-50%) translateY(-4px);background:var(--dark2);border:1px solid rgba(255,255,255,.07);border-top:2px solid var(--red);min-width:188px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s var(--ease);padding-top:6px}
+.drop::before{content:'';position:absolute;top:-6px;left:0;right:0;height:6px}
+.drop a{display:block;padding:9px 18px;color:rgba(255,255,255,.68);font-size:13px;border-bottom:1px solid rgba(255,255,255,.05);transition:color .15s,background .15s,padding .15s}
+.drop a:last-child{border-bottom:none}
+.drop a:hover{color:#fff;background:rgba(224,0,37,.12);padding-left:24px}
+.nr{display:flex;align-items:center;gap:12px}
+.ls{display:flex;align-items:center;gap:2px;background:rgba(255,255,255,.1);border-radius:20px;padding:3px}
+.lb{padding:4px 9px;border-radius:16px;font-size:11px;font-weight:700;color:rgba(255,255,255,.5);transition:all .2s;letter-spacing:.06em}
+.lb.on{background:var(--red);color:#fff}
+.lb:hover:not(.on){color:#fff}
+.ncta{padding:8px 16px;background:var(--red);color:#fff;font-size:12.5px;font-weight:600;border-radius:3px;transition:background .2s;letter-spacing:.04em;text-transform:uppercase}
+.ncta:hover{background:var(--red-lt)}
+.ntg{display:none;flex-direction:column;gap:5px;padding:4px}
+.ntg span{display:block;width:22px;height:2px;background:#fff;transition:all .3s}
+
+/* HERO */
+#hero{position:relative;height:100vh;min-height:580px;overflow:hidden;background:var(--dark)}
+.sl{position:absolute;inset:0;opacity:0;transition:opacity .9s var(--ease)}
+.sl.on{opacity:1}
+.slbg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.05);transition:transform 7s var(--ease)}
+.sl.on .slbg{transform:scale(1)}
+.sloy{position:absolute;inset:0;background:linear-gradient(to right,rgba(0,0,0,.72) 0%,rgba(0,0,0,.3) 55%,transparent 100%)}
+.slc{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:100%;max-width:var(--max);padding:0 24px;padding-top:var(--nh);color:#fff}
+.sle{display:inline-flex;align-items:center;gap:10px;margin-bottom:16px;opacity:0;transform:translateY(16px);transition:opacity .6s .3s,transform .6s .3s var(--eout)}
+.sl.on .sle{opacity:1;transform:translateY(0)}
+.sel{width:30px;height:2px;background:var(--red)}
+.set{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.78)}
+.slt{font-size:clamp(30px,5vw,62px);font-weight:700;line-height:1.12;margin-bottom:16px;max-width:620px;opacity:0;transform:translateY(26px);transition:opacity .7s .5s,transform .7s .5s var(--eout)}
+.sl.on .slt{opacity:1;transform:translateY(0)}
+.slt em{font-style:normal;color:var(--red-lt)}
+.sld{font-size:clamp(13px,1.6vw,16px);font-weight:300;color:rgba(255,255,255,.76);max-width:460px;line-height:1.72;margin-bottom:30px;opacity:0;transform:translateY(16px);transition:opacity .7s .7s,transform .7s .7s var(--eout)}
+.sl.on .sld{opacity:1;transform:translateY(0)}
+.sla{display:flex;gap:12px;flex-wrap:wrap;opacity:0;transform:translateY(16px);transition:opacity .7s .88s,transform .7s .88s var(--eout)}
+.sl.on .sla{opacity:1;transform:translateY(0)}
+.bp{padding:12px 28px;background:var(--red);color:#fff;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border-radius:3px;transition:background .2s,transform .15s;display:inline-block}
+.bp:hover{background:var(--red-lt);transform:translateY(-1px)}
+.bg{padding:11px 26px;border:1.5px solid rgba(255,255,255,.4);color:#fff;font-size:13px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;border-radius:3px;transition:border-color .2s,background .2s;display:inline-block}
+.bg:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.sdots{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:10}
+.sdot{width:26px;height:3px;background:rgba(255,255,255,.28);border-radius:2px;cursor:pointer;transition:background .3s,width .3s}
+.sdot.on{background:var(--red);width:42px}
+.sarr{position:absolute;bottom:24px;right:34px;display:flex;gap:8px;z-index:10}
+.sa{width:40px;height:40px;border:1.5px solid rgba(255,255,255,.22);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;cursor:pointer;font-size:15px;transition:all .2s;background:rgba(0,0,0,.12)}
+.sa:hover{border-color:var(--red);background:var(--red)}
+
+/* SECTION */
+section{padding:92px 0;scroll-margin-top:72px}
+#stats,#partners,#footer{scroll-margin-top:72px}
+.sh{text-align:center;margin-bottom:56px}
+.stag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:10px}
+.stit{font-size:clamp(24px,3.5vw,40px);font-weight:700;line-height:1.2;color:var(--dark);margin-bottom:12px}
+.sdesc{font-size:15px;font-weight:300;color:var(--gray);max-width:520px;margin:0 auto;line-height:1.72}
+.div{width:42px;height:3px;background:var(--red);margin:16px auto 0}
+
+/* STATS */
+#stats{padding:0;background:var(--dark)}
+.stg{display:grid;grid-template-columns:repeat(4,1fr)}
+.sti{padding:34px 24px;border-right:1px solid rgba(255,255,255,.07);text-align:center;transition:background .3s}
+.sti:last-child{border-right:none}
+.sti:hover{background:rgba(224,0,37,.06)}
+.stn{font-size:38px;font-weight:700;color:#fff;line-height:1;margin-bottom:5px}
+.stn sup{font-size:20px;color:var(--red)}
+.stl{font-size:11px;color:rgba(255,255,255,.38);letter-spacing:.1em;text-transform:uppercase}
+
+/* SERVICES */
+#services{background:var(--light)}
+.svg{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.sc{background:#fff;padding:40px 30px;position:relative;overflow:hidden;transition:transform .3s var(--ease),box-shadow .3s}
+.sc::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:3px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.sc:hover::after{transform:scaleX(1)}
+.sc:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(0,0,0,.1);z-index:2}
+.snum{font-size:11px;font-weight:700;color:var(--red);letter-spacing:.2em;margin-bottom:16px}
+.sico{width:48px;height:48px;margin-bottom:20px;background:rgba(224,0,37,.07);border-radius:4px;display:flex;align-items:center;justify-content:center}
+.sico svg{width:24px;height:24px;color:var(--red)}
+.snm{font-size:17px;font-weight:700;margin-bottom:10px;line-height:1.3}
+.sds{font-size:13.5px;color:var(--gray);line-height:1.72;margin-bottom:22px}
+.slk{font-size:12px;font-weight:700;color:var(--red);letter-spacing:.06em;text-transform:uppercase;display:flex;align-items:center;gap:6px;transition:gap .2s}
+.slk:hover{gap:12px}
+
+/* ABOUT */
+#about{background:#fff}
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:68px;align-items:center}
+.av{position:relative}
+.av img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;display:block}
+.abadge{position:absolute;bottom:-20px;right:-20px;background:var(--red);color:#fff;padding:20px;border-radius:4px;text-align:center;min-width:120px}
+.abn{font-size:36px;font-weight:700;line-height:1}
+.abl{font-size:10px;opacity:.85;margin-top:3px;letter-spacing:.08em;text-transform:uppercase}
+.ac .sh{text-align:left;margin-bottom:26px}
+.ac .div{margin-left:0}
+.at{font-size:14px;color:var(--mid);line-height:1.8;margin-bottom:12px}
+.afg{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+.af{display:flex;align-items:flex-start;gap:10px}
+.afd{width:7px;height:7px;background:var(--red);border-radius:50%;margin-top:7px;flex-shrink:0}
+.aft{font-size:13px;color:var(--mid);line-height:1.5}
+.aft strong{display:block;color:var(--dark);font-weight:600;margin-bottom:2px;font-size:13px}
+
+/* HISTORY */
+#history{background:var(--dark);overflow:hidden}
+#history .stit,#history .stag{color:#fff}
+#history .sdesc{color:rgba(255,255,255,.42)}
+.tl{display:grid;grid-template-columns:1fr 1fr;position:relative;margin-top:8px}
+.tl::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;background:rgba(255,255,255,.07);transform:translateX(-50%)}
+.ti{padding:26px 40px 26px 26px;position:relative}
+.ti:nth-child(even){padding:26px 26px 26px 40px;border-left:1px solid rgba(255,255,255,.04)}
+.ti::after{content:'';position:absolute;top:32px;right:-4px;width:8px;height:8px;background:var(--red);border-radius:50%}
+.ti:nth-child(even)::after{right:auto;left:-4px}
+.tiy{font-size:11px;font-weight:700;color:var(--red);letter-spacing:.15em;margin-bottom:7px}
+.tie li{font-size:12.5px;color:rgba(255,255,255,.58);line-height:1.6;padding:3px 0 3px 11px;position:relative}
+.tie li::before{content:'—';position:absolute;left:0;color:var(--red);font-size:10px;top:5px}
+
+/* PRODUCTS */
+#products{background:var(--light)}
+.ptabs{display:flex;justify-content:center;margin-bottom:40px;border-bottom:1px solid var(--border)}
+.ptab{padding:12px 24px;font-size:13px;font-weight:600;color:var(--gray);letter-spacing:.04em;border-bottom:2px solid transparent;margin-bottom:-1px;cursor:pointer;transition:color .2s,border-color .2s}
+.ptab.on{color:var(--red);border-bottom-color:var(--red)}
+.ptab:hover:not(.on){color:var(--dark)}
+.ppanel{display:none}
+.ppanel.on{display:block}
+.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pc{background:#fff;border-radius:4px;overflow:hidden;transition:transform .3s var(--ease),box-shadow .3s}
+.pc:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.1)}
+.piw{position:relative;overflow:hidden;background:var(--light);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center}
+.piw img{width:100%;height:100%;object-fit:cover;transition:transform .4s var(--ease)}
+.pc:hover .piw img{transform:scale(1.04)}
+.piw.pad img{object-fit:contain;padding:20px}
+.pinfo{padding:14px 16px 18px}
+.pbr{font-size:10px;color:var(--red);font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+.pnm{font-size:14px;font-weight:600;color:var(--dark);line-height:1.4;margin-bottom:5px}
+.psp{font-size:12px;color:var(--gray);line-height:1.5}
+
+/* CALIBRATION */
+#calibration{background:#fff}
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:68px;align-items:start}
+.cc .sh{text-align:left;margin-bottom:26px}
+.cc .div{margin-left:0}
+.cl li{display:flex;align-items:flex-start;gap:11px;padding:11px 0;border-bottom:1px solid var(--border);font-size:13px;color:var(--mid);line-height:1.55}
+.cl li:last-child{border-bottom:none}
+.ck{width:19px;height:19px;background:rgba(224,0,37,.08);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.ck svg{width:10px;height:10px;color:var(--red)}
+.ccert{display:flex;align-items:center;gap:14px;background:var(--light);border:1px solid var(--border);padding:16px 18px;border-radius:4px;margin-top:16px}
+.ccert img{height:60px;width:auto;object-fit:contain}
+.cct strong{display:block;font-size:14px;color:var(--dark);font-weight:700;margin-bottom:2px}
+.cct span{font-size:11.5px;color:var(--gray)}
+.cpv{display:grid;gap:12px}
+.cpv img{width:100%;object-fit:cover;border-radius:4px;display:block}
+.cpv img:first-child{aspect-ratio:16/10}
+.cpv img:last-child{aspect-ratio:4/3}
+
+/* PARTNERS */
+#partners{background:var(--light);padding:68px 0}
+.parg{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:4px;overflow:hidden;margin-top:44px}
+.par{background:#fff;padding:26px 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;transition:background .2s}
+.par:hover{background:var(--light)}
+.parn{font-size:14px;font-weight:700;color:var(--gray);transition:color .2s}
+.par:hover .parn{color:var(--dark)}
+.pard{font-size:11px;color:rgba(107,111,122,.65);text-align:center;line-height:1.4}
+
+/* LOCATIONS */
+#locations{background:#fff}
+.lg{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.lc{border:1px solid var(--border);border-radius:4px;overflow:hidden;transition:box-shadow .3s,border-color .3s}
+.lc:hover{box-shadow:0 10px 32px rgba(0,0,0,.08);border-color:var(--red)}
+.lph{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.lmap{width:100%;display:block;border-bottom:1px solid var(--border)}
+.lmap img{width:100%;height:180px;object-fit:cover;object-position:center;display:block;filter:grayscale(20%);transition:filter .3s}
+.lc:hover .lmap img{filter:grayscale(0)}
+.li{padding:20px 22px}
+.lco{font-size:10px;font-weight:700;color:var(--red);letter-spacing:.2em;text-transform:uppercase;margin-bottom:5px}
+.lof{font-size:15px;font-weight:700;color:var(--dark);margin-bottom:10px;line-height:1.3}
+.lad{font-size:12.5px;color:var(--gray);line-height:1.65;margin-bottom:12px}
+.lte{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--mid);font-weight:500}
+.lte svg{color:var(--red);flex-shrink:0;width:13px;height:13px}
+.lte a:hover{color:var(--red)}
+.lc.wide{grid-column:1/-1}
+.vni{display:grid;grid-template-columns:1fr 1fr}
+.vnl img{width:100%;height:100%;object-fit:cover;display:block;min-height:220px}
+.vnr{padding:26px 28px;display:flex;flex-direction:column;justify-content:center}
+.vng{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:10px}
+.vnc{font-size:11px;font-weight:700;color:var(--red);letter-spacing:.1em;text-transform:uppercase;margin-bottom:3px}
+.vna{font-size:12px;color:var(--gray);line-height:1.58}
+.vnt{font-size:12px;color:var(--mid);margin-top:3px;font-weight:500}
+
+/* CONTACT */
+#contact{background:var(--dark);padding:92px 0}
+#contact .stit{color:#fff}
+#contact .sdesc{color:rgba(255,255,255,.42)}
+.cog{display:grid;grid-template-columns:1fr 1.3fr;gap:68px;margin-top:52px}
+.coi{display:flex;flex-direction:column;gap:22px}
+.coitem{display:flex;gap:14px}
+.coico{width:40px;height:40px;background:rgba(224,0,37,.12);border:1px solid rgba(224,0,37,.2);border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--red)}
+.coico svg{width:17px;height:17px}
+.colb{font-size:10px;font-weight:700;color:rgba(255,255,255,.28);letter-spacing:.15em;text-transform:uppercase;margin-bottom:5px}
+.covl{font-size:14px;color:#fff;line-height:1.65}
+.covl a{color:rgba(255,255,255,.72);transition:color .2s}
+.covl a:hover{color:var(--red-lt)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.fg{margin-bottom:12px}
+.fl{display:block;font-size:10.5px;font-weight:700;color:rgba(255,255,255,.38);letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+.fc{width:100%;padding:10px 13px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:3px;color:#fff;font-size:13px;font-family:inherit;outline:none;transition:border-color .2s,background .2s}
+.fc::placeholder{color:rgba(255,255,255,.22)}
+.fc:focus{border-color:var(--red);background:rgba(224,0,37,.04)}
+textarea.fc{min-height:120px;resize:vertical}
+.fsb{width:100%;padding:13px;background:var(--red);color:#fff;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border-radius:3px;cursor:pointer;transition:background .2s;border:none;font-family:inherit;margin-top:5px}
+.fsb:hover{background:var(--red-lt)}
+
+/* FOOTER */
+#footer{background:#0a0c10;padding:56px 0 26px}
+.ft{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.05);margin-bottom:26px}
+.fli{height:26px;width:auto;filter:brightness(0) invert(.5);margin-bottom:14px;display:block}
+.ftag{font-size:12px;color:rgba(255,255,255,.32);line-height:1.72;max-width:250px;margin-bottom:18px}
+.fcs{font-size:12px;color:rgba(255,255,255,.36);line-height:1.82}
+.fcs a{transition:color .2s}
+.fcs a:hover{color:rgba(255,255,255,.68)}
+.fct{font-size:10px;font-weight:700;color:rgba(255,255,255,.38);letter-spacing:.2em;text-transform:uppercase;margin-bottom:16px}
+.fl2 li{margin-bottom:8px}
+.fl2 a{font-size:13px;color:rgba(255,255,255,.36);transition:color .2s}
+.fl2 a:hover{color:rgba(255,255,255,.72)}
+.fb{display:flex;align-items:center;justify-content:space-between}
+.fcp{font-size:11.5px;color:rgba(255,255,255,.2)}
+.fleg{display:flex;gap:16px}
+.fleg a{font-size:11.5px;color:rgba(255,255,255,.2);transition:color .2s}
+.fleg a:hover{color:rgba(255,255,255,.44)}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s var(--eout),transform .7s var(--eout)}
+.rv.vis{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+  .svg{grid-template-columns:repeat(2,1fr)}
+  .pg{grid-template-columns:repeat(2,1fr)}
+  .stg{grid-template-columns:repeat(2,1fr)}
+  .sti{border-bottom:1px solid rgba(255,255,255,.07)}
+  .ag,.cg,.cog{gap:40px}
+  .ft{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  section{padding:64px 0}
+  .nm,.ncta{display:none}
+  .ntg{display:flex}
+  .nm.op{display:flex;flex-direction:column;position:fixed;top:var(--nh);left:0;right:0;background:var(--dark2);padding:18px;gap:0;border-top:1px solid rgba(255,255,255,.07);max-height:calc(100vh - var(--nh));overflow-y:auto}
+  .drop{position:static;opacity:1;pointer-events:all;transform:none;display:none;margin-top:4px}
+  .ni-item.op .drop{display:block}
+  .ag,.cg,.cog{grid-template-columns:1fr}
+  .abadge{bottom:-10px;right:-10px}
+  .cv{order:-1}
+  .svg,.pg{grid-template-columns:1fr}
+  .parg{grid-template-columns:repeat(2,1fr)}
+  .lg{grid-template-columns:1fr}
+  .vni{grid-template-columns:1fr}
+  .vnl img{min-height:160px;max-height:200px}
+  .tl{grid-template-columns:1fr}
+  .tl::before{left:16px}
+  .ti{padding:16px 16px 16px 40px;border-left:none!important}
+  .ti::after{left:12px!important;right:auto!important}
+  .ft{grid-template-columns:1fr}
+  .fb{flex-direction:column;gap:8px;text-align:center}
+  .sarr{display:none}
+  .frow{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body class="lang-en">
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="ni">
+    <a href="#" class="logo"><img src="assets/img/logo/h1_logo.gif" alt="Tellustech"></a>
+    <ul class="nm" id="nm">
+      <li class="ni-item">
+        <a class="nl" href="#about"><span data-l="en">Company</span><span data-l="kr">회사소개</span><span data-l="vn">Công ty</span></a>
+        <div class="drop">
+          <a href="#about"><span data-l="en">About Us</span><span data-l="kr">회사 개요</span><span data-l="vn">Giới thiệu</span></a>
+          <a href="#history"><span data-l="en">History</span><span data-l="kr">연혁</span><span data-l="vn">Lịch sử</span></a>
+          <a href="#locations"><span data-l="en">Locations</span><span data-l="kr">오시는 길</span><span data-l="vn">Văn phòng</span></a>
+        </div>
+      </li>
+      <li class="ni-item">
+        <a class="nl" href="#services"><span data-l="en">Business</span><span data-l="kr">사업분야</span><span data-l="vn">Dịch vụ</span></a>
+        <div class="drop">
+          <a href="#products" data-tab="tm"><span data-l="en">Test &amp; Measurement</span><span data-l="kr">계측기</span><span data-l="vn">Đo lường</span></a>
+          <a href="#products" data-tab="cable"><span data-l="en">RF Cable &amp; Component</span><span data-l="kr">RF 케이블</span><span data-l="vn">Cáp RF</span></a>
+          <a href="#products" data-tab="net"><span data-l="en">Network System</span><span data-l="kr">네트워크</span><span data-l="vn">Mạng lưới</span></a>
+          <a href="#products" data-tab="ptr"><span data-l="en">Multifunction Printer</span><span data-l="kr">복합기</span><span data-l="vn">Máy in</span></a>
+        </div>
+      </li>
+      <li class="ni-item"><a class="nl" href="#calibration"><span data-l="en">Calibration</span><span data-l="kr">교정연구소</span><span data-l="vn">Hiệu chuẩn</span></a></li>
+      <li class="ni-item"><a class="nl" href="#products"><span data-l="en">Products</span><span data-l="kr">제품</span><span data-l="vn">Sản phẩm</span></a></li>
+      <li class="ni-item"><a class="nl" href="#contact"><span data-l="en">Contact</span><span data-l="kr">문의</span><span data-l="vn">Liên hệ</span></a></li>
+    </ul>
+    <div class="nr">
+      <div class="ls">
+        <button class="lb on" data-ls="en">EN</button>
+        <button class="lb" data-ls="kr">KR</button>
+        <button class="lb" data-ls="vn">VN</button>
+      </div>
+      <a href="#contact" class="ncta"><span data-l="en">Get Quote</span><span data-l="kr">견적문의</span><span data-l="vn">Báo giá</span></a>
+      <button class="ntg" id="ntg" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="sl on">
+    <div class="slbg" style="background-image:url('assets/img/main/img_visual_01.jpg')"></div>
+    <div class="sloy"></div>
+    <div class="slc">
+      <div class="sle"><div class="sel"></div><span class="set"><span data-l="en">Test &amp; Measurement</span><span data-l="kr">계측기 전문</span><span data-l="vn">Đo lường &amp; Kiểm tra</span></span></div>
+      <h1 class="slt"><span data-l="en">Precision Measurement<br>Solutions for <em>Industry</em></span><span data-l="kr">산업을 위한<br><em>정밀 계측</em> 솔루션</span><span data-l="vn">Giải pháp đo lường<br>chính xác cho <em>công nghiệp</em></span></h1>
+      <p class="sld"><span data-l="en">Authorized distributor of Keysight, Rohde &amp; Schwarz, Fluke, and Advantest. Sales, repair, and maintenance across Korea and Vietnam.</span><span data-l="kr">Keysight, Rohde &amp; Schwarz, Fluke, Advantest 공인 대리점. 한국과 베트남에서 판매·수리·유지보수를 제공합니다.</span><span data-l="vn">Nhà phân phối ủy quyền của Keysight, R&amp;S, Fluke và Advantest tại Hàn Quốc và Việt Nam.</span></p>
+      <div class="sla"><a href="#products" class="bp"><span data-l="en">View Products</span><span data-l="kr">제품 보기</span><span data-l="vn">Xem sản phẩm</span></a><a href="#contact" class="bg"><span data-l="en">Request Quote</span><span data-l="kr">견적 요청</span><span data-l="vn">Báo giá</span></a></div>
+    </div>
+  </div>
+  <div class="sl">
+    <div class="slbg" style="background-image:url('assets/img/main/img_visual_03.jpg')"></div>
+    <div class="sloy"></div>
+    <div class="slc">
+      <div class="sle"><div class="sel"></div><span class="set"><span data-l="en">RF Cable &amp; Component</span><span data-l="kr">RF 케이블 &amp; 부품</span><span data-l="vn">Cáp RF &amp; Linh kiện</span></span></div>
+      <h1 class="slt"><span data-l="en">Custom RF Cable<br><em>Assembly</em> Specialists</span><span data-l="kr">맞춤형 RF 케이블<br><em>조립</em> 전문</span><span data-l="vn">Chuyên gia lắp ráp<br>cáp RF <em>tùy chỉnh</em></span></h1>
+      <p class="sld"><span data-l="en">Huber+Suhner authorized dealer. Custom cable assemblies for telecom, defense, and R&amp;D. LG Electronics preferred supplier.</span><span data-l="kr">Huber+Suhner 공식 딜러. 통신·국방·연구 분야 맞춤형 케이블. LG전자 협력업체.</span><span data-l="vn">Đại lý chính thức Huber+Suhner. Cáp RF tùy chỉnh cho viễn thông, quốc phòng và R&amp;D.</span></p>
+      <div class="sla"><a href="#services" class="bp"><span data-l="en">Learn More</span><span data-l="kr">자세히 보기</span><span data-l="vn">Tìm hiểu thêm</span></a><a href="#contact" class="bg"><span data-l="en">Request Quote</span><span data-l="kr">견적 요청</span><span data-l="vn">Báo giá</span></a></div>
+    </div>
+  </div>
+  <div class="sl">
+    <div class="slbg" style="background-image:url('assets/img/main/img_visual_02.jpg')"></div>
+    <div class="sloy"></div>
+    <div class="slc">
+      <div class="sle"><div class="sel"></div><span class="set"><span data-l="en">Network System</span><span data-l="kr">네트워크 시스템</span><span data-l="vn">Hệ thống Mạng</span></span></div>
+      <h1 class="slt"><span data-l="en">Build Your <em>Network</em><br>Infrastructure</span><span data-l="kr"><em>네트워크</em> 인프라<br>구축 솔루션</span><span data-l="vn">Xây dựng hạ tầng<br><em>mạng lưới</em> của bạn</span></h1>
+      <p class="sld"><span data-l="en">Data network, data center, server deployment, IT cable ring, system design and consulting services.</span><span data-l="kr">데이터 네트워크 구축, 데이터 센터, 서버 배포, IT 케이블링, 시스템 설계 및 컨설팅.</span><span data-l="vn">Mạng dữ liệu, trung tâm dữ liệu, triển khai máy chủ, thiết kế hệ thống và tư vấn.</span></p>
+      <div class="sla"><a href="#services" class="bp"><span data-l="en">Our Services</span><span data-l="kr">서비스 보기</span><span data-l="vn">Dịch vụ</span></a><a href="#contact" class="bg"><span data-l="en">Contact Us</span><span data-l="kr">문의하기</span><span data-l="vn">Liên hệ</span></a></div>
+    </div>
+  </div>
+  <div class="sl">
+    <div class="slbg" style="background-image:url('assets/img/main/img_visual_04.jpg')"></div>
+    <div class="sloy"></div>
+    <div class="slc">
+      <div class="sle"><div class="sel"></div><span class="set"><span data-l="en">Calibration Lab</span><span data-l="kr">교정 연구소</span><span data-l="vn">Phòng Hiệu chuẩn</span></span></div>
+      <h1 class="slt"><span data-l="en">VILAS Certified<br><em>Calibration</em> Lab</span><span data-l="kr">VILAS 인증<br><em>교정 연구소</em></span><span data-l="vn">Phòng <em>hiệu chuẩn</em><br>đạt chuẩn VILAS</span></h1>
+      <p class="sld"><span data-l="en">ISO/IEC 17025:2005 certified calibration lab in Vietnam (VILAS 857). Electrical, electronic and mechanical calibration services.</span><span data-l="kr">베트남 VILAS 857 인증 ISO/IEC 17025:2005 교정 연구소. 전기·전자·기계 분야 정밀 교정 서비스.</span><span data-l="vn">Phòng thí nghiệm hiệu chuẩn đạt chuẩn ISO/IEC 17025:2005 tại Việt Nam (VILAS 857).</span></p>
+      <div class="sla"><a href="#calibration" class="bp"><span data-l="en">Calibration Services</span><span data-l="kr">교정 서비스</span><span data-l="vn">Dịch vụ hiệu chuẩn</span></a><a href="#contact" class="bg"><span data-l="en">Get Quote</span><span data-l="kr">견적 요청</span><span data-l="vn">Báo giá</span></a></div>
+    </div>
+  </div>
+  <div class="sl">
+    <div class="slbg" style="background-image:url('assets/img/main/img_visual_05.jpg')"></div>
+    <div class="sloy"></div>
+    <div class="slc">
+      <div class="sle"><div class="sel"></div><span class="set"><span data-l="en">Multifunction Printer</span><span data-l="kr">복합기 렌탈</span><span data-l="vn">Máy in đa chức năng</span></span></div>
+      <h1 class="slt"><span data-l="en">Print Rental<br><em>Service</em> in Vietnam</span><span data-l="kr">베트남<br>복합기 <em>렌탈 서비스</em></span><span data-l="vn">Dịch vụ <em>thuê máy in</em><br>tại Việt Nam</span></h1>
+      <p class="sld"><span data-l="en">Samsung &amp; Sindoh multifunction printer rental, sales, and maintenance for businesses operating in Vietnam.</span><span data-l="kr">베트남 사업체를 위한 Samsung &amp; Sindoh 복합기 렌탈, 판매 및 유지보수 서비스.</span><span data-l="vn">Cho thuê, bán và bảo trì máy in Samsung &amp; Sindoh cho doanh nghiệp tại Việt Nam.</span></p>
+      <div class="sla"><a href="#services" class="bp"><span data-l="en">Learn More</span><span data-l="kr">자세히 보기</span><span data-l="vn">Tìm hiểu thêm</span></a><a href="#contact" class="bg"><span data-l="en">Contact Us</span><span data-l="kr">문의하기</span><span data-l="vn">Liên hệ</span></a></div>
+    </div>
+  </div>
+  <div class="sdots" id="sdots">
+    <div class="sdot on" onclick="goSl(0)"></div><div class="sdot" onclick="goSl(1)"></div><div class="sdot" onclick="goSl(2)"></div><div class="sdot" onclick="goSl(3)"></div><div class="sdot" onclick="goSl(4)"></div>
+  </div>
+  <div class="sarr"><div class="sa" onclick="prevSl()">&#8592;</div><div class="sa" onclick="nextSl()">&#8594;</div></div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="stg">
+    <div class="sti rv"><div class="stn">15<sup>+</sup></div><div class="stl"><span data-l="en">Years of Experience</span><span data-l="kr">업력</span><span data-l="vn">Năm kinh nghiệm</span></div></div>
+    <div class="sti rv d1"><div class="stn">5<sup>+</sup></div><div class="stl"><span data-l="en">Office Locations</span><span data-l="kr">사무소</span><span data-l="vn">Văn phòng</span></div></div>
+    <div class="sti rv d2"><div class="stn">8<sup>+</sup></div><div class="stl"><span data-l="en">Global Partners</span><span data-l="kr">글로벌 파트너</span><span data-l="vn">Đối tác toàn cầu</span></div></div>
+    <div class="sti rv d3"><div class="stn" style="font-size:26px;padding-top:4px">VILAS<sup>&nbsp;</sup></div><div class="stl"><span data-l="en">Certified Calibration Lab</span><span data-l="kr">인증 교정 연구소</span><span data-l="vn">Phòng lab đạt chuẩn</span></div></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="stag"><span data-l="en">What We Do</span><span data-l="kr">사업 분야</span><span data-l="vn">Lĩnh vực</span></div>
+      <h2 class="stit"><span data-l="en">Our Business Areas</span><span data-l="kr">텔러스테크 사업 분야</span><span data-l="vn">Lĩnh vực kinh doanh</span></h2>
+      <p class="sdesc"><span data-l="en">Comprehensive solutions in test &amp; measurement, RF cables, calibration, network systems, and multifunction printers across Korea and Vietnam.</span><span data-l="kr">계측기, RF 케이블, 교정, 네트워크 시스템, 복합기 분야에서 한국과 베트남에 종합 솔루션을 제공합니다.</span><span data-l="vn">Giải pháp toàn diện về đo lường, cáp RF, hiệu chuẩn, mạng lưới và máy in tại Hàn Quốc và Việt Nam.</span></p>
+      <div class="div"></div>
+    </div>
+    <div class="svg">
+      <div class="sc rv">
+        <div class="snum">01</div>
+        <div class="sico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg></div>
+        <div class="snm"><span data-l="en">Test &amp; Measurement</span><span data-l="kr">계측기</span><span data-l="vn">Đo lường &amp; Kiểm tra</span></div>
+        <p class="sds"><span data-l="en">Used &amp; new equipment sales, repair, rental and technical support. Authorized distributor for Keysight, R&amp;S, Fluke, Advantest and more.</span><span data-l="kr">중고·신품 장비 매매, 수리, 렌탈, 기술 지원. Keysight, R&amp;S, Fluke, Advantest 공인 대리점.</span><span data-l="vn">Mua bán thiết bị, sửa chữa, cho thuê và hỗ trợ kỹ thuật. Đại lý ủy quyền Keysight, R&amp;S, Fluke, Advantest.</span></p>
+        <a href="#products" data-tab="tm" class="slk"><span data-l="en">View Products</span><span data-l="kr">제품 보기</span><span data-l="vn">Xem sản phẩm</span> &rarr;</a>
+      </div>
+      <div class="sc rv d1">
+        <div class="snum">02</div>
+        <div class="sico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M12 3v18"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <div class="snm"><span data-l="en">RF Cable &amp; Component</span><span data-l="kr">RF 케이블 &amp; 부품</span><span data-l="vn">Cáp RF &amp; Linh kiện</span></div>
+        <p class="sds"><span data-l="en">Custom cable assembly, major RF component distribution, and quality control. Huber+Suhner authorized dealer. LG Electronics preferred supplier.</span><span data-l="kr">맞춤형 케이블 조립, RF 부품 유통, 품질 관리. Huber+Suhner 공식 딜러, LG전자 협력업체.</span><span data-l="vn">Lắp ráp cáp tùy chỉnh, phân phối linh kiện RF. Đại lý Huber+Suhner. Nhà cung cấp ưu tiên của LG Electronics.</span></p>
+        <a href="#products" data-tab="cable" class="slk"><span data-l="en">Learn More</span><span data-l="kr">자세히 보기</span><span data-l="vn">Tìm hiểu thêm</span> &rarr;</a>
+      </div>
+      <div class="sc rv d2">
+        <div class="snum">03</div>
+        <div class="sico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div class="snm"><span data-l="en">Calibration Lab</span><span data-l="kr">교정 연구소</span><span data-l="vn">Phòng Hiệu chuẩn</span></div>
+        <p class="sds"><span data-l="en">ISO/IEC 17025:2005 certified calibration in Vietnam (VILAS 857). Electrical, electronic and mechanical measurement calibration services.</span><span data-l="kr">베트남 VILAS 857 인증 ISO/IEC 17025:2005 교정 서비스. 전기·전자·기계 분야 정밀 교정.</span><span data-l="vn">Hiệu chuẩn đạt chuẩn ISO/IEC 17025:2005 tại Việt Nam (VILAS 857). Điện, điện tử, cơ khí.</span></p>
+        <a href="#calibration" class="slk"><span data-l="en">Calibration Info</span><span data-l="kr">교정 정보</span><span data-l="vn">Thông tin hiệu chuẩn</span> &rarr;</a>
+      </div>
+      <div class="sc rv d3">
+        <div class="snum">04</div>
+        <div class="sico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="6" height="6" rx="1"/><rect x="16" y="2" width="6" height="6" rx="1"/><rect x="9" y="16" width="6" height="6" rx="1"/><path d="M5 8v4c0 1.1.9 2 2 2h10a2 2 0 002-2V8M12 14v2"/></svg></div>
+        <div class="snm"><span data-l="en">Network System</span><span data-l="kr">네트워크 시스템</span><span data-l="vn">Hệ thống Mạng</span></div>
+        <p class="sds"><span data-l="en">Data network construction, data center build, server deployment, IT cable ring, and system design &amp; consulting.</span><span data-l="kr">데이터 네트워크 구축, 데이터 센터, 서버 배포, IT 케이블링, 시스템 설계 및 컨설팅.</span><span data-l="vn">Xây dựng mạng dữ liệu, trung tâm dữ liệu, triển khai máy chủ, thiết kế hệ thống và tư vấn.</span></p>
+        <a href="#products" data-tab="net" class="slk"><span data-l="en">View Solutions</span><span data-l="kr">솔루션 보기</span><span data-l="vn">Xem giải pháp</span> &rarr;</a>
+      </div>
+      <div class="sc rv d4">
+        <div class="snum">05</div>
+        <div class="sico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <div class="snm"><span data-l="en">ISP X-ray Systems</span><span data-l="kr">ISP 유해물질검사기</span><span data-l="vn">Hệ thống X-quang ISP</span></div>
+        <p class="sds"><span data-l="en">ISP Energy Dispersive X-ray systems for RoHS compliance, coating thickness measurement, and PCB analysis. ISP Vietnam distributor.</span><span data-l="kr">RoHS 검사, 도막 두께 측정, PCB 분석용 ISP 에너지 분산형 X선 시스템. ISP 베트남 총판.</span><span data-l="vn">Hệ thống X-quang ISP cho kiểm tra RoHS, đo độ dày lớp phủ và phân tích PCB. Nhà phân phối ISP tại Việt Nam.</span></p>
+        <a href="#contact" class="slk"><span data-l="en">Inquire</span><span data-l="kr">문의하기</span><span data-l="vn">Liên hệ</span> &rarr;</a>
+      </div>
+      <div class="sc rv d5">
+        <div class="snum">06</div>
+        <div class="sico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg></div>
+        <div class="snm"><span data-l="en">Multifunction Printer</span><span data-l="kr">복합기 렌탈</span><span data-l="vn">Máy in đa chức năng</span></div>
+        <p class="sds"><span data-l="en">Samsung &amp; Sindoh multifunction printer rental, sales, and full maintenance service for businesses in Vietnam.</span><span data-l="kr">베트남 사업체를 위한 Samsung &amp; Sindoh 복합기 렌탈, 판매, 유지보수 서비스.</span><span data-l="vn">Cho thuê, bán và bảo trì toàn bộ máy in Samsung &amp; Sindoh cho doanh nghiệp tại Việt Nam.</span></p>
+        <a href="#products" data-tab="ptr" class="slk"><span data-l="en">Get Quote</span><span data-l="kr">견적 문의</span><span data-l="vn">Báo giá</span> &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="ag">
+      <div class="av rv">
+        <img src="assets/img/about/img_location_intro1.jpg" alt="Tellustech Vietnam Team">
+        <div class="abadge"><div class="abn">2010</div><div class="abl"><span data-l="en">Founded</span><span data-l="kr">창립</span><span data-l="vn">Thành lập</span></div></div>
+      </div>
+      <div class="ac rv d2">
+        <div class="sh">
+          <div class="stag"><span data-l="en">About Tellustech</span><span data-l="kr">텔러스테크 소개</span><span data-l="vn">Về Tellustech</span></div>
+          <h2 class="stit"><span data-l="en">Your Trusted Partner<br>in Korea &amp; Vietnam</span><span data-l="kr">한국과 베트남을 잇는<br>신뢰할 수 있는 파트너</span><span data-l="vn">Đối tác tin cậy<br>tại Hàn Quốc &amp; Việt Nam</span></h2>
+          <div class="div"></div>
+        </div>
+        <p class="at"><span data-l="en">Founded in 2010, Tellustech Co., Ltd. (텔러스테크) specializes in test &amp; measurement equipment, RF cable assemblies, calibration services, network systems, and multifunction printers across Korea and Vietnam.</span><span data-l="kr">2010년 설립된 텔러스테크(주)는 계측기, RF 케이블 조립, 교정 서비스, 네트워크 시스템, 복합기 분야에서 한국과 베트남에 걸쳐 종합 솔루션을 제공하는 전문 기업입니다.</span><span data-l="vn">Được thành lập năm 2010, Công ty TNHH Tellustech chuyên cung cấp thiết bị đo lường, lắp ráp cáp RF, dịch vụ hiệu chuẩn, hệ thống mạng và máy in tại Hàn Quốc và Việt Nam.</span></p>
+        <p class="at"><span data-l="en">With offices in Seoul, Seongnam, Bac Ninh, Hanoi, and Ho Chi Minh City, we bridge Korean technology with the Vietnamese market. We received the $5M Export Award in 2012 and earned VILAS 857 accreditation in 2015.</span><span data-l="kr">서울, 성남, 박닌, 하노이, 호치민에 사무소를 두고 한국의 기술력과 베트남 시장을 연결합니다. 2012년 500만 달러 수출의 탑, 2015년 VILAS 857 인증을 획득했습니다.</span><span data-l="vn">Với văn phòng tại Seoul, Seongnam, Bắc Ninh, Hà Nội và TP.HCM, chúng tôi kết nối công nghệ Hàn Quốc với thị trường Việt Nam. Giải thưởng xuất khẩu 5 triệu USD năm 2012, chứng nhận VILAS 857 năm 2015.</span></p>
+        <div class="afg">
+          <div class="af"><div class="afd"></div><div class="aft"><strong><span data-l="en">Authorized Distributor</span><span data-l="kr">공인 대리점</span><span data-l="vn">Nhà phân phối ủy quyền</span></strong><span data-l="en">Keysight, R&amp;S, Fluke, Huber+Suhner</span><span data-l="kr">Keysight, R&amp;S, Fluke, Huber+Suhner</span><span data-l="vn">Keysight, R&amp;S, Fluke, Huber+Suhner</span></div></div>
+          <div class="af"><div class="afd"></div><div class="aft"><strong><span data-l="en">VILAS Certified</span><span data-l="kr">VILAS 인증</span><span data-l="vn">Đạt chuẩn VILAS</span></strong><span data-l="en">ISO/IEC 17025 Calibration Lab</span><span data-l="kr">ISO/IEC 17025 교정 연구소</span><span data-l="vn">Phòng lab ISO/IEC 17025</span></div></div>
+          <div class="af"><div class="afd"></div><div class="aft"><strong><span data-l="en">5 Offices</span><span data-l="kr">5개 사무소</span><span data-l="vn">5 văn phòng</span></strong><span data-l="en">Korea &amp; Vietnam</span><span data-l="kr">한국 &amp; 베트남</span><span data-l="vn">Hàn Quốc &amp; Việt Nam</span></div></div>
+          <div class="af"><div class="afd"></div><div class="aft"><strong><span data-l="en">LG Electronics Partner</span><span data-l="kr">LG전자 협력사</span><span data-l="vn">Đối tác LG Electronics</span></strong><span data-l="en">Cable supply &amp; maintenance</span><span data-l="kr">케이블 납품 및 유지보수</span><span data-l="vn">Cung cấp cáp &amp; bảo trì</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HISTORY -->
+<section id="history">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="stag"><span data-l="en">Our Journey</span><span data-l="kr">연혁</span><span data-l="vn">Lịch sử phát triển</span></div>
+      <h2 class="stit"><span data-l="en">15 Years of Growth</span><span data-l="kr">15년의 성장 역사</span><span data-l="vn">15 năm phát triển</span></h2>
+      <div class="div"></div>
+    </div>
+    <div class="tl">
+      <div class="ti rv"><div class="tiy">2010</div><ul class="tie"><li><span data-l="en">Company founded</span><span data-l="kr">법인 설립</span><span data-l="vn">Thành lập công ty</span></li><li><span data-l="en">LG Electronics service partnership</span><span data-l="kr">LG전자 서비스 파트너십</span><span data-l="vn">Hợp tác dịch vụ LG Electronics</span></li></ul></div>
+      <div class="ti rv d1"><div class="tiy">2011</div><ul class="tie"><li><span data-l="en">T&amp;M equipment repair center established</span><span data-l="kr">계측기 수리 센터 설립</span><span data-l="vn">Thành lập trung tâm sửa chữa</span></li><li><span data-l="en">$1M Export Award</span><span data-l="kr">100만 달러 수출의 탑 수상</span><span data-l="vn">Giải thưởng xuất khẩu 1 triệu USD</span></li></ul></div>
+      <div class="ti rv"><div class="tiy">2012</div><ul class="tie"><li><span data-l="en">Hermon Lab distributor agreement</span><span data-l="kr">Hermon Lab 총판 계약</span><span data-l="vn">Hợp đồng phân phối Hermon Lab</span></li><li><span data-l="en">Huber+Suhner authorized dealer</span><span data-l="kr">Huber+Suhner 공식 딜러 지정</span><span data-l="vn">Đại lý chính thức Huber+Suhner</span></li><li><span data-l="en">Vietnam branch — Bac Ninh</span><span data-l="kr">베트남 박닌 지사 설립</span><span data-l="vn">Chi nhánh Bắc Ninh, Việt Nam</span></li><li><span data-l="en">$5M Export Award</span><span data-l="kr">500만 달러 수출의 탑 수상</span><span data-l="vn">Giải thưởng xuất khẩu 5 triệu USD</span></li></ul></div>
+      <div class="ti rv d1"><div class="tiy">2013</div><ul class="tie"><li><span data-l="en">ISP Vietnam distributor agreement</span><span data-l="kr">ISP 베트남 총판 계약</span><span data-l="vn">Hợp đồng phân phối ISP Việt Nam</span></li><li><span data-l="en">LG Electronics RF cable supply</span><span data-l="kr">LG전자 RF 케이블 납품</span><span data-l="vn">Cung cấp cáp RF cho LG Electronics</span></li></ul></div>
+      <div class="ti rv"><div class="tiy">2014</div><ul class="tie"><li><span data-l="en">Vietnam Calibration Center opened</span><span data-l="kr">베트남 교정 센터 오픈</span><span data-l="vn">Khai trương Trung tâm hiệu chuẩn VN</span></li><li><span data-l="en">Vietnam printer rental service launched</span><span data-l="kr">베트남 복합기 렌탈 서비스 시작</span><span data-l="vn">Ra mắt dịch vụ thuê máy in VN</span></li></ul></div>
+      <div class="ti rv d1"><div class="tiy">2015</div><ul class="tie"><li><span data-l="en">LG Electronics Keysight maintenance contract</span><span data-l="kr">LG전자 Keysight 유지보수 계약</span><span data-l="vn">Hợp đồng bảo trì Keysight với LG</span></li><li><span data-l="en">VILAS 857 accreditation obtained (Aug)</span><span data-l="kr">VILAS 857 인증 획득 (8월)</span><span data-l="vn">Đạt chứng nhận VILAS 857 (tháng 8)</span></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="stag"><span data-l="en">Products &amp; Solutions</span><span data-l="kr">제품 &amp; 솔루션</span><span data-l="vn">Sản phẩm &amp; Giải pháp</span></div>
+      <h2 class="stit"><span data-l="en">Featured Products</span><span data-l="kr">주요 제품</span><span data-l="vn">Sản phẩm nổi bật</span></h2>
+      <div class="div"></div>
+    </div>
+    <div class="ptabs">
+      <div class="ptab on" onclick="swTab('tm',this)"><span data-l="en">Test &amp; Measurement</span><span data-l="kr">계측기</span><span data-l="vn">Đo lường</span></div>
+      <div class="ptab" onclick="swTab('cable',this)"><span data-l="en">RF Cable</span><span data-l="kr">RF 케이블</span><span data-l="vn">Cáp RF</span></div>
+      <div class="ptab" onclick="swTab('net',this)"><span data-l="en">Network</span><span data-l="kr">네트워크</span><span data-l="vn">Mạng lưới</span></div>
+      <div class="ptab" onclick="swTab('ptr',this)"><span data-l="en">Printer</span><span data-l="kr">복합기</span><span data-l="vn">Máy in</span></div>
+    </div>
+    <div class="ppanel on" id="pp-tm">
+      <div class="pg">
+        <div class="pc rv"><div class="piw" style="background:#e8edf5"><div style="text-align:center"><div style="font-size:28px;font-weight:800;color:#3a3d47">R&amp;S</div><div style="font-size:12px;color:#6b6f7a;margin-top:4px">Signal Analyzer</div></div></div><div class="pinfo"><div class="pbr">Rohde &amp; Schwarz</div><div class="pnm"><span data-l="en">Signal &amp; Spectrum Analyzers</span><span data-l="kr">신호 및 스펙트럼 분석기</span><span data-l="vn">Máy phân tích tín hiệu &amp; phổ</span></div><div class="psp"><span data-l="en">New &amp; Used · Sales, Repair, Rental</span><span data-l="kr">신품 &amp; 중고 · 판매, 수리, 렌탈</span><span data-l="vn">Mới &amp; Đã dùng · Bán, Sửa, Thuê</span></div></div></div>
+        <div class="pc rv d1"><div class="piw" style="background:#f0f4fa"><div style="text-align:center"><div style="font-size:24px;font-weight:800;color:#1a73c8">Keysight</div><div style="font-size:12px;color:#6b6f7a;margin-top:4px">Network Analyzer</div></div></div><div class="pinfo"><div class="pbr">Keysight Technologies</div><div class="pnm"><span data-l="en">Network Analyzers &amp; Oscilloscopes</span><span data-l="kr">네트워크 분석기 &amp; 오실로스코프</span><span data-l="vn">Máy phân tích mạng &amp; Dao động ký</span></div><div class="psp"><span data-l="en">New &amp; Used · Sales, Repair, Maintenance</span><span data-l="kr">신품 &amp; 중고 · 판매, 수리, 유지보수</span><span data-l="vn">Mới &amp; Đã dùng · Bán, Sửa, Bảo trì</span></div></div></div>
+        <div class="pc rv d2"><div class="piw" style="background:#fff8f0"><div style="text-align:center"><div style="font-size:26px;font-weight:800;color:#e67e22">Fluke</div><div style="font-size:12px;color:#6b6f7a;margin-top:4px">Multimeter / Calibrator</div></div></div><div class="pinfo"><div class="pbr">Fluke / Advantest</div><div class="pnm"><span data-l="en">Multimeters &amp; Calibrators</span><span data-l="kr">멀티미터 &amp; 교정기</span><span data-l="vn">Đồng hồ vạn năng &amp; Máy hiệu chuẩn</span></div><div class="psp"><span data-l="en">New &amp; Used · Sales, Repair, Calibration</span><span data-l="kr">신품 &amp; 중고 · 판매, 수리, 교정</span><span data-l="vn">Mới &amp; Đã dùng · Bán, Sửa, Hiệu chuẩn</span></div></div></div>
+      </div>
+      <p style="text-align:center;margin-top:24px;font-size:13px;color:var(--gray)"><span data-l="en">More brands available — contact us for stock &amp; pricing.</span><span data-l="kr">더 많은 브랜드를 취급합니다. 재고 문의 및 견적은 아래로 연락주세요.</span><span data-l="vn">Nhiều thương hiệu hơn — liên hệ để biết tình trạng hàng và giá.</span></p>
+    </div>
+    <div class="ppanel" id="pp-cable">
+      <div class="pg">
+        <div class="pc rv"><div class="piw pad"><img src="assets/img/cable/customizing_item1.png" alt="RF Connector"></div><div class="pinfo"><div class="pbr">Custom Assembly</div><div class="pnm"><span data-l="en">RF Connectors &amp; Adapters</span><span data-l="kr">RF 커넥터 &amp; 어댑터</span><span data-l="vn">Đầu nối &amp; Bộ chuyển đổi RF</span></div><div class="psp">SMA, N-type, BNC, SMP...</div></div></div>
+        <div class="pc rv d1"><div class="piw pad"><img src="assets/img/cable/customizing_item2.png" alt="RF Cable"></div><div class="pinfo"><div class="pbr">Huber+Suhner / Custom</div><div class="pnm"><span data-l="en">Custom Cable Assemblies</span><span data-l="kr">맞춤형 케이블 조립품</span><span data-l="vn">Cáp tùy chỉnh lắp ráp sẵn</span></div><div class="psp"><span data-l="en">Semi-rigid, Flexible, Phase-stable</span><span data-l="kr">반경성, 유연성, 위상 안정형</span><span data-l="vn">Bán cứng, Mềm, Ổn định pha</span></div></div></div>
+        <div class="pc rv d2"><div class="piw pad"><img src="assets/img/cable/customizing_item3.png" alt="RF Component"></div><div class="pinfo"><div class="pbr">Major Components</div><div class="pnm"><span data-l="en">RF Passive Components</span><span data-l="kr">RF 수동 부품</span><span data-l="vn">Linh kiện RF thụ động</span></div><div class="psp"><span data-l="en">Attenuators, Terminators, Dividers</span><span data-l="kr">감쇠기, 종단기, 분배기</span><span data-l="vn">Bộ suy hao, Đầu cuối, Bộ chia</span></div></div></div>
+        <div class="pc rv d3"><div class="piw pad"><img src="assets/img/cable/customizing_item4.png" alt="RF Component 4"></div><div class="pinfo"><div class="pbr">Production</div><div class="pnm"><span data-l="en">Cable Production &amp; QC</span><span data-l="kr">케이블 생산 &amp; 품질 관리</span><span data-l="vn">Sản xuất cáp &amp; Kiểm tra chất lượng</span></div><div class="psp"><span data-l="en">In-house production with quality testing</span><span data-l="kr">자체 생산 및 품질 검사</span><span data-l="vn">Sản xuất nội bộ với kiểm tra chất lượng</span></div></div></div>
+        <div class="pc rv d4"><div class="piw pad"><img src="assets/img/cable/customizing_item5.png" alt="RF Component 5"></div><div class="pinfo"><div class="pbr">Huber+Suhner</div><div class="pnm"><span data-l="en">Huber+Suhner Products</span><span data-l="kr">Huber+Suhner 제품</span><span data-l="vn">Sản phẩm Huber+Suhner</span></div><div class="psp"><span data-l="en">Authorized dealer — full product range</span><span data-l="kr">공식 딜러 — 전체 제품 라인</span><span data-l="vn">Đại lý chính thức — Toàn bộ dòng sản phẩm</span></div></div></div>
+        <div class="pc rv d5"><div class="piw pad"><img src="assets/img/cable/customizing_item6.png" alt="RF Component 6"></div><div class="pinfo"><div class="pbr">Custom</div><div class="pnm"><span data-l="en">Specialty Assemblies</span><span data-l="kr">특수 조립품</span><span data-l="vn">Lắp ráp đặc biệt</span></div><div class="psp"><span data-l="en">Defense, aerospace, telecom</span><span data-l="kr">방위, 항공우주, 통신</span><span data-l="vn">Quốc phòng, hàng không, viễn thông</span></div></div></div>
+      </div>
+    </div>
+    <div class="ppanel" id="pp-net">
+      <div class="pg">
+        <div class="pc rv"><div class="piw"><img src="assets/img/network/product1.jpg" alt="Network Infrastructure"></div><div class="pinfo"><div class="pbr">Network System</div><div class="pnm"><span data-l="en">Data Center &amp; Server</span><span data-l="kr">데이터 센터 &amp; 서버</span><span data-l="vn">Trung tâm dữ liệu &amp; Máy chủ</span></div><div class="psp"><span data-l="en">Build, deployment, maintenance</span><span data-l="kr">구축, 배포, 유지보수</span><span data-l="vn">Xây dựng, triển khai, bảo trì</span></div></div></div>
+        <div class="pc rv d1"><div class="piw"><img src="assets/img/network/product2.jpg" alt="Network Solution"></div><div class="pinfo"><div class="pbr">Network System</div><div class="pnm"><span data-l="en">Network Infrastructure</span><span data-l="kr">네트워크 인프라</span><span data-l="vn">Hạ tầng mạng lưới</span></div><div class="psp"><span data-l="en">IT cable ring, structured cabling</span><span data-l="kr">IT 케이블링, 구조적 배선</span><span data-l="vn">Vòng cáp IT, cáp có cấu trúc</span></div></div></div>
+        <div class="pc rv d2"><div class="piw"><img src="assets/img/network/img_solution1.jpg" alt="Solution"></div><div class="pinfo"><div class="pbr">Consulting</div><div class="pnm"><span data-l="en">System Design &amp; Consulting</span><span data-l="kr">시스템 설계 &amp; 컨설팅</span><span data-l="vn">Thiết kế hệ thống &amp; Tư vấn</span></div><div class="psp"><span data-l="en">Tailored solutions for your business</span><span data-l="kr">비즈니스 맞춤형 솔루션</span><span data-l="vn">Giải pháp phù hợp cho doanh nghiệp bạn</span></div></div></div>
+      </div>
+    </div>
+    <div class="ppanel" id="pp-ptr">
+      <div class="pg">
+        <div class="pc rv"><div class="piw pad" style="background:#f8f8f8"><img src="assets/img/printer/img_clx9201na_1.gif" alt="Samsung CLX-9201NA"></div><div class="pinfo"><div class="pbr">Samsung</div><div class="pnm">MultiXpress CLX-9201NA</div><div class="psp"><span data-l="en">Color A3 MFP / Rental &amp; Sales</span><span data-l="kr">컬러 A3 복합기 / 렌탈 &amp; 판매</span><span data-l="vn">Máy in màu A3 / Thuê &amp; Bán</span></div></div></div>
+        <div class="pc rv d1"><div class="piw pad" style="background:#f8f8f8"><img src="assets/img/printer/img_scx8240na_1.gif" alt="Samsung SCX-8240NA"></div><div class="pinfo"><div class="pbr">Samsung</div><div class="pnm">MultiXpress SCX-8240NA</div><div class="psp"><span data-l="en">Mono A3 MFP / Rental &amp; Sales</span><span data-l="kr">흑백 A3 복합기 / 렌탈 &amp; 판매</span><span data-l="vn">Máy in đen trắng A3 / Thuê &amp; Bán</span></div></div></div>
+        <div class="pc rv d2"><div class="piw" style="background:linear-gradient(135deg,#f0f4fa,#dde3f0)"><div style="text-align:center"><div style="font-size:22px;font-weight:800;color:#3a3d47">Sindoh</div><div style="font-size:12px;color:#6b6f7a;margin-top:4px">3F Series</div></div></div><div class="pinfo"><div class="pbr">Sindoh</div><div class="pnm"><span data-l="en">Sindoh Multifunction Series</span><span data-l="kr">신도 복합기 시리즈</span><span data-l="vn">Dòng máy in Sindoh</span></div><div class="psp"><span data-l="en">Full maintenance service included</span><span data-l="kr">유지보수 서비스 포함</span><span data-l="vn">Bao gồm dịch vụ bảo trì</span></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALIBRATION -->
+<section id="calibration">
+  <div class="wrap">
+    <div class="cg">
+      <div class="cc rv">
+        <div class="sh">
+          <div class="stag"><span data-l="en">Calibration Lab</span><span data-l="kr">교정 연구소</span><span data-l="vn">Phòng Hiệu chuẩn</span></div>
+          <h2 class="stit"><span data-l="en">VILAS Certified<br>Calibration Services</span><span data-l="kr">VILAS 인증<br>교정 서비스</span><span data-l="vn">Dịch vụ hiệu chuẩn<br>đạt chuẩn VILAS</span></h2>
+          <div class="div"></div>
+        </div>
+        <ul class="cl">
+          <li><div class="ck"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg></div><span><span data-l="en">ISO/IEC 17025:2005 certified lab (VILAS 857) in Bac Ninh, Vietnam — ILAC-MRA/APLAC MRA member</span><span data-l="kr">베트남 박닌 ISO/IEC 17025:2005 인증 연구소 (VILAS 857) — ILAC-MRA/APLAC MRA 회원</span><span data-l="vn">Phòng lab đạt chuẩn ISO/IEC 17025:2005 tại Bắc Ninh (VILAS 857) — Thành viên ILAC-MRA/APLAC MRA</span></span></li>
+          <li><div class="ck"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg></div><span><span data-l="en">Electrical &amp; electronic calibration — voltage, current, resistance, frequency</span><span data-l="kr">전기·전자 계측 교정 — 전압, 전류, 저항, 주파수</span><span data-l="vn">Hiệu chuẩn điện &amp; điện tử — điện áp, dòng điện, điện trở, tần số</span></span></li>
+          <li><div class="ck"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg></div><span><span data-l="en">Mechanical calibration — length, mass, torque, pressure</span><span data-l="kr">기계적 계측 교정 — 길이, 질량, 토크, 압력</span><span data-l="vn">Hiệu chuẩn cơ khí — chiều dài, khối lượng, mô-men xoắn, áp suất</span></span></li>
+          <li><div class="ck"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg></div><span><span data-l="en">On-site calibration service available across Vietnam</span><span data-l="kr">베트남 전역 현장 교정 서비스 제공</span><span data-l="vn">Dịch vụ hiệu chuẩn tại chỗ trên toàn Việt Nam</span></span></li>
+          <li><div class="ck"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="2,6 5,9 10,3"/></svg></div><span><span data-l="en">Internationally recognized calibration certificates issued</span><span data-l="kr">국제적으로 인정되는 교정 성적서 발급</span><span data-l="vn">Cấp chứng chỉ hiệu chuẩn được công nhận quốc tế</span></span></li>
+        </ul>
+        <div class="ccert">
+          <img src="assets/img/calibration/img_cert.jpg" alt="VILAS 857 Certificate">
+          <div class="cct"><strong>VILAS 857 — ISO/IEC 17025:2005</strong><span><span data-l="en">Accreditation No. VILAS 857 · Measurement – Calibration</span><span data-l="kr">인증번호 VILAS 857 · 분야: 측정 – 교정</span><span data-l="vn">Số chứng nhận VILAS 857 · Đo lường – Hiệu chuẩn</span></span></div>
+        </div>
+      </div>
+      <div class="cv rv d2">
+        <div class="cpv">
+          <img src="assets/img/about/img_building.jpg" alt="Vietnam Bac Ninh Office">
+          <img src="assets/img/about/img_location_intro1.jpg" alt="Calibration Lab Team">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section id="partners">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="stag"><span data-l="en">Our Partners</span><span data-l="kr">파트너사</span><span data-l="vn">Đối tác</span></div>
+      <h2 class="stit"><span data-l="en">Global Brand Partners</span><span data-l="kr">글로벌 파트너 브랜드</span><span data-l="vn">Thương hiệu đối tác toàn cầu</span></h2>
+      <p class="sdesc"><span data-l="en">Authorized distributor and dealer for leading global brands in test &amp; measurement and RF technology.</span><span data-l="kr">계측기 및 RF 기술 분야 글로벌 선도 브랜드의 공인 대리점·딜러.</span><span data-l="vn">Nhà phân phối và đại lý ủy quyền cho các thương hiệu hàng đầu thế giới.</span></p>
+    </div>
+    <div class="parg rv">
+      <div class="par"><div class="parn">Keysight</div><div class="pard"><span data-l="en">T&amp;M Equipment</span><span data-l="kr">계측기</span><span data-l="vn">Thiết bị đo lường</span></div></div>
+      <div class="par"><div class="parn">Rohde &amp; Schwarz</div><div class="pard"><span data-l="en">T&amp;M Equipment</span><span data-l="kr">계측기</span><span data-l="vn">Thiết bị đo lường</span></div></div>
+      <div class="par"><div class="parn">Fluke</div><div class="pard"><span data-l="en">Test Instruments</span><span data-l="kr">테스트 장비</span><span data-l="vn">Dụng cụ đo</span></div></div>
+      <div class="par"><div class="parn">Advantest</div><div class="pard"><span data-l="en">Semiconductor Test</span><span data-l="kr">반도체 테스트</span><span data-l="vn">Kiểm tra bán dẫn</span></div></div>
+      <div class="par"><div class="parn">Huber+Suhner</div><div class="pard"><span data-l="en">RF Cable &amp; Components</span><span data-l="kr">RF 케이블</span><span data-l="vn">Cáp RF</span></div></div>
+      <div class="par"><div class="parn">Mitutoyo</div><div class="pard"><span data-l="en">Precision Measurement</span><span data-l="kr">정밀 계측</span><span data-l="vn">Đo lường chính xác</span></div></div>
+      <div class="par"><div class="parn">Sindoh</div><div class="pard"><span data-l="en">Multifunction Printers</span><span data-l="kr">복합기</span><span data-l="vn">Máy in đa năng</span></div></div>
+      <div class="par"><div class="parn">ISP</div><div class="pard"><span data-l="en">X-ray Inspection</span><span data-l="kr">X선 검사</span><span data-l="vn">Kiểm tra X-quang</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATIONS -->
+<section id="locations">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="stag"><span data-l="en">Our Offices</span><span data-l="kr">사무소</span><span data-l="vn">Văn phòng</span></div>
+      <h2 class="stit"><span data-l="en">Korea &amp; Vietnam</span><span data-l="kr">한국 &amp; 베트남</span><span data-l="vn">Hàn Quốc &amp; Việt Nam</span></h2>
+      <p class="sdesc"><span data-l="en">5 offices across Seoul, Seongnam, Bac Ninh, Hanoi, and Ho Chi Minh City.</span><span data-l="kr">서울, 성남, 박닌, 하노이, 호치민 5개 사무소.</span><span data-l="vn">5 văn phòng tại Seoul, Seongnam, Bắc Ninh, Hà Nội và TP.HCM.</span></p>
+      <div class="div"></div>
+    </div>
+    <div class="lg">
+      <div class="lc rv">
+        <div class="lmap"><img src="assets/img/map/seoul.gif" alt="Seoul Office Map"></div>
+        <div class="li">
+          <div class="lco">🇰🇷 Korea</div>
+          <div class="lof"><span data-l="en">Seoul Head Office</span><span data-l="kr">서울 본사</span><span data-l="vn">Trụ sở Seoul</span></div>
+          <div class="lad"><span data-l="en">A-811, Hyundai KIC, Gasan-dong, Geumcheon-gu, Seoul</span><span data-l="kr">서울시 금천구 가산동 현대 KIC A-811</span><span data-l="vn">A-811, Hyundai KIC, Gasan-dong, Geumcheon-gu, Seoul</span></div>
+          <div class="lte"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.89 10.8 19.79 19.79 0 01.82 2.18 2 2 0 012.81 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l.97-.97a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+82707092015">+82-70-7092-0150</a></div>
+        </div>
+      </div>
+      <div class="lc rv d1">
+        <div class="lmap"><img src="assets/img/map/seongnam.gif" alt="Seongnam Office Map"></div>
+        <div class="li">
+          <div class="lco">🇰🇷 Korea</div>
+          <div class="lof"><span data-l="en">Seongnam Branch</span><span data-l="kr">성남 지사</span><span data-l="vn">Chi nhánh Seongnam</span></div>
+          <div class="lad"><span data-l="en">D-713, Sigma2, Sampyeong-dong, Bundang-gu, Seongnam-si, Gyeonggi-do</span><span data-l="kr">경기도 성남시 분당구 삼평동 시그마2 D-713</span><span data-l="vn">D-713, Sigma2, Sampyeong-dong, Bundang-gu, Seongnam-si</span></div>
+          <div class="lte"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.89 10.8 19.79 19.79 0 01.82 2.18 2 2 0 012.81 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l.97-.97a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+82707092015">+82-70-7092-0150</a></div>
+        </div>
+      </div>
+      <div class="lc wide rv d2">
+        <div class="vni">
+          <div class="vnl">
+            <img src="assets/img/map/bacninh.gif" alt="Bac Ninh Map" style="width:100%;height:100%;object-fit:cover;display:block;min-height:220px">
+          </div>
+          <div class="vnr">
+            <div class="lco">🇻🇳 Vietnam</div>
+            <div class="lof"><span data-l="en">Vietnam Offices</span><span data-l="kr">베트남 사무소</span><span data-l="vn">Văn phòng Việt Nam</span></div>
+            <div class="vng">
+              <div><div class="vnc"><span data-l="en">Bac Ninh (HQ)</span><span data-l="kr">박닌 (본부)</span><span data-l="vn">Bắc Ninh (Trụ sở)</span></div><div class="vna"><span data-l="en">No.1 Nguyen Gia Thieu, Suoi Hoa Ward, Bac Ninh City</span><span data-l="kr">박닌시 수오이호아 응우옌자티에우가 1번지</span><span data-l="vn">Số 1 Nguyễn Gia Thiều, P. Suối Hoa, TP. Bắc Ninh</span></div><div class="vnt"><a href="tel:+842223871984">+84-222-387-1984</a></div></div>
+              <div><div class="vnc"><span data-l="en">Hanoi</span><span data-l="kr">하노이</span><span data-l="vn">Hà Nội</span></div><div class="vna"><span data-l="en">Hanoi Representative Office</span><span data-l="kr">하노이 연락사무소</span><span data-l="vn">Văn phòng đại diện Hà Nội</span></div><div class="vnt"><a href="tel:+842223871984">+84-222-387-1984</a></div></div>
+              <div><div class="vnc"><span data-l="en">Ho Chi Minh City</span><span data-l="kr">호치민</span><span data-l="vn">TP. Hồ Chí Minh</span></div><div class="vna"><span data-l="en">Ho Chi Minh Representative Office</span><span data-l="kr">호치민 연락사무소</span><span data-l="vn">Văn phòng đại diện TP.HCM</span></div><div class="vnt"><a href="tel:+842223871984">+84-222-387-1984</a></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sh rv">
+      <div class="stag"><span data-l="en">Contact Us</span><span data-l="kr">문의하기</span><span data-l="vn">Liên hệ</span></div>
+      <h2 class="stit"><span data-l="en">Get in Touch</span><span data-l="kr">문의 &amp; 견적 요청</span><span data-l="vn">Liên hệ với chúng tôi</span></h2>
+      <p class="sdesc"><span data-l="en">Sales inquiries, repair, quotations, or calibration — our team is ready to help.</span><span data-l="kr">판매 문의, 수리 요청, 견적, 교정 서비스 등 무엇이든 도와드리겠습니다.</span><span data-l="vn">Mua hàng, sửa chữa, báo giá hoặc hiệu chuẩn — đội ngũ chúng tôi sẵn sàng hỗ trợ.</span></p>
+      <div class="div"></div>
+    </div>
+    <div class="cog">
+      <div class="coi rv">
+        <div class="coitem"><div class="coico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.89 10.8 19.79 19.79 0 01.82 2.18 2 2 0 012.81 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l.97-.97a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div><div><div class="colb"><span data-l="en">Phone</span><span data-l="kr">전화</span><span data-l="vn">Điện thoại</span></div><div class="covl">🇰🇷 <a href="tel:+82707092015">+82-70-7092-0150</a><br>🇻🇳 <a href="tel:+842223871984">+84-222-387-1984</a></div></div></div>
+        <div class="coitem"><div class="coico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="colb">Email</div><div class="covl"><a href="/cdn-cgi/l/email-protection#6714060b02142713020b0b12141302040f490408490c15"><span class="__cf_email__" data-cfemail="8dfeece1e8fecdf9e8e1e1f8fef9e8eee5a3eee2a3e6ff">[email&#160;protected]</span></a></div></div></div>
+        <div class="coitem"><div class="coico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="colb"><span data-l="en">Korea HQ</span><span data-l="kr">한국 본사</span><span data-l="vn">Trụ sở Hàn Quốc</span></div><div class="covl"><span data-l="en">A-811, Hyundai KIC, Gasan-dong, Geumcheon-gu, Seoul</span><span data-l="kr">서울시 금천구 가산동 현대 KIC A-811</span><span data-l="vn">A-811, Hyundai KIC, Gasan-dong, Seoul</span></div></div></div>
+        <div class="coitem"><div class="coico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="colb"><span data-l="en">Vietnam HQ</span><span data-l="kr">베트남 본부</span><span data-l="vn">Trụ sở Việt Nam</span></div><div class="covl"><span data-l="en">No.1 Nguyen Gia Thieu, Suoi Hoa, Bac Ninh City</span><span data-l="kr">박닌시 수오이호아 응우옌자티에우가 1번지</span><span data-l="vn">Số 1 Nguyễn Gia Thiều, P. Suối Hoa, TP. Bắc Ninh</span></div></div></div>
+      </div>
+      <form class="rv d2" onsubmit="doSend(event)">
+        <div class="frow">
+          <div class="fg"><label class="fl"><span data-l="en">Name</span><span data-l="kr">이름</span><span data-l="vn">Họ tên</span></label><input type="text" class="fc" name="name" placeholder="John Smith" required></div>
+          <div class="fg"><label class="fl"><span data-l="en">Company</span><span data-l="kr">회사명</span><span data-l="vn">Công ty</span></label><input type="text" class="fc" name="company" placeholder="Company Name"></div>
+        </div>
+        <div class="frow">
+          <div class="fg"><label class="fl">Email</label><input type="email" class="fc" name="email" placeholder="you@company.com" required></div>
+          <div class="fg"><label class="fl"><span data-l="en">Phone</span><span data-l="kr">전화번호</span><span data-l="vn">Số điện thoại</span></label><input type="tel" class="fc" name="phone" placeholder="+82-10-0000-0000"></div>
+        </div>
+        <div class="fg">
+          <label class="fl"><span data-l="en">Inquiry Type</span><span data-l="kr">문의 유형</span><span data-l="vn">Loại yêu cầu</span></label>
+          <select class="fc" name="type">
+            <option value="">Select...</option>
+            <option value="sales">Sales / Purchase</option>
+            <option value="repair">Repair / Maintenance</option>
+            <option value="calibration">Calibration Service</option>
+            <option value="quote">Quotation Request</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="fg"><label class="fl"><span data-l="en">Message</span><span data-l="kr">내용</span><span data-l="vn">Nội dung</span></label><textarea class="fc" name="message" placeholder="Please describe your inquiry..." required></textarea></div>
+        <button type="submit" class="fsb"><span data-l="en">Send Inquiry</span><span data-l="kr">문의 보내기</span><span data-l="vn">Gửi yêu cầu</span></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <img src="assets/img/logo/h1_logo.gif" alt="Tellustech" class="fli">
+        <p class="ftag"><span data-l="en">Tellustech Co., Ltd. — Your trusted partner for test &amp; measurement, RF cables, calibration, and network solutions across Korea and Vietnam since 2010.</span><span data-l="kr">텔러스테크(주) — 2010년 창립. 계측기, RF 케이블, 교정, 네트워크 솔루션 분야에서 한국과 베트남을 잇는 신뢰할 수 있는 파트너.</span><span data-l="vn">Công ty TNHH Tellustech — Đối tác tin cậy về thiết bị đo lường, cáp RF, hiệu chuẩn và giải pháp mạng tại Hàn Quốc và Việt Nam từ năm 2010.</span></p>
+        <div class="fcs"><div>📞 KR: <a href="tel:+82707092015">+82-70-7092-0150</a></div><div>📞 VN: <a href="tel:+842223871984">+84-222-387-1984</a></div><div>✉️ <a href="/cdn-cgi/l/email-protection#1b687a777e685b6f7e77776e686f7e7873357874357069"><span class="__cf_email__" data-cfemail="7f0c1e131a0c3f0b1a13130a0c0b1a1c17511c1051140d">[email&#160;protected]</span></a></div></div>
+      </div>
+      <div>
+        <div class="fct"><span data-l="en">Business</span><span data-l="kr">사업 분야</span><span data-l="vn">Dịch vụ</span></div>
+        <ul class="fl2">
+          <li><a href="#products" data-tab="tm"><span data-l="en">Test &amp; Measurement</span><span data-l="kr">계측기</span><span data-l="vn">Đo lường</span></a></li>
+          <li><a href="#products" data-tab="cable"><span data-l="en">RF Cable &amp; Component</span><span data-l="kr">RF 케이블</span><span data-l="vn">Cáp RF</span></a></li>
+          <li><a href="#calibration"><span data-l="en">Calibration Lab</span><span data-l="kr">교정 연구소</span><span data-l="vn">Hiệu chuẩn</span></a></li>
+          <li><a href="#products" data-tab="net"><span data-l="en">Network System</span><span data-l="kr">네트워크</span><span data-l="vn">Mạng lưới</span></a></li>
+          <li><a href="#products" data-tab="ptr"><span data-l="en">Multifunction Printer</span><span data-l="kr">복합기</span><span data-l="vn">Máy in</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fct"><span data-l="en">Company</span><span data-l="kr">회사</span><span data-l="vn">Công ty</span></div>
+        <ul class="fl2">
+          <li><a href="#about"><span data-l="en">About Us</span><span data-l="kr">회사 소개</span><span data-l="vn">Giới thiệu</span></a></li>
+          <li><a href="#history"><span data-l="en">History</span><span data-l="kr">연혁</span><span data-l="vn">Lịch sử</span></a></li>
+          <li><a href="#partners"><span data-l="en">Partners</span><span data-l="kr">파트너</span><span data-l="vn">Đối tác</span></a></li>
+          <li><a href="#locations"><span data-l="en">Locations</span><span data-l="kr">오시는 길</span><span data-l="vn">Văn phòng</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="fct"><span data-l="en">Contact</span><span data-l="kr">연락처</span><span data-l="vn">Liên hệ</span></div>
+        <ul class="fl2">
+          <li><a href="#contact"><span data-l="en">Get Quote</span><span data-l="kr">견적 문의</span><span data-l="vn">Báo giá</span></a></li>
+          <li><a href="/cdn-cgi/l/email-protection#7c0f1d10190f3c08191010090f08191f14521f1352170e"><span class="__cf_email__" data-cfemail="493a28252c3a093d2c25253c3a3d2c2a21672a2667223b">[email&#160;protected]</span></a></li>
+          <li><a href="#locations">Seoul Office</a></li>
+          <li><a href="#locations">Vietnam Office</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fb">
+      <div class="fcp">© 2025 Tellustech Co., Ltd. (주)텔러스테크. All rights reserved.</div>
+      <div class="fleg"><a href="#">Privacy Policy</a><a href="/cdn-cgi/l/email-protection#e49785888197a49081888891979081878cca878bca8f96"><span class="__cf_email__" data-cfemail="85f6e4e9e0f6c5f1e0e9e9f0f6f1e0e6edabe6eaabeef7">[email&#160;protected]</span></a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ── Product tabs ─────────────────────────────────────────
+function swTab(id, el) {
+  document.querySelectorAll('.ptab').forEach(t => t.classList.remove('on'));
+  document.querySelectorAll('.ppanel').forEach(p => p.classList.remove('on'));
+  el.classList.add('on');
+  document.getElementById('pp-' + id).classList.add('on');
+}
+
+// ── Language ─────────────────────────────────────────────
+function setLang(l) {
+  document.body.classList.remove('lang-en','lang-kr','lang-vn');
+  document.body.classList.add('lang-' + l);
+  document.querySelectorAll('.lb').forEach(b => b.classList.toggle('on', b.dataset.ls === l));
+  localStorage.setItem('tl-l', l);
+}
+document.querySelectorAll('.lb').forEach(b => b.addEventListener('click', () => setLang(b.dataset.ls)));
+setLang(localStorage.getItem('tl-l') || 'en');
+
+// ── Scroll helper ─────────────────────────────────────────
+function scrollToId(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const top = el.getBoundingClientRect().top + window.scrollY - 72;
+  window.scrollTo({ top: top, behavior: 'smooth' });
+}
+
+// ── All internal anchor links ─────────────────────────────
+document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var href = link.getAttribute('href');
+    if (!href || href === '#') return;
+    var targetId = href.slice(1);
+    var target = document.getElementById(targetId);
+    if (!target) return;
+    e.preventDefault();
+
+    // data-tab: 제품탭 전환
+    if (link.dataset.tab) {
+      var tabId = link.dataset.tab;
+      document.querySelectorAll('.ptab').forEach(function(t){ t.classList.remove('on'); });
+      document.querySelectorAll('.ppanel').forEach(function(p){ p.classList.remove('on'); });
+      var panel = document.getElementById('pp-' + tabId);
+      var tab   = document.querySelector('.ptab[onclick*="' + tabId + '"]');
+      if (panel) panel.classList.add('on');
+      if (tab)   tab.classList.add('on');
+    }
+
+    scrollToId(targetId);
+    nm.classList.remove('op');
+    document.querySelectorAll('.ni-item').forEach(function(i){ i.classList.remove('op'); });
+  });
+});
+
+// ── Mobile: 드롭다운 부모 메뉴 토글 ──────────────────────
+document.querySelectorAll('.ni-item > .nl').forEach(function(l) {
+  l.addEventListener('click', function(e) {
+    if (window.innerWidth <= 768 && l.parentElement.querySelector('.drop')) {
+      e.preventDefault();
+      l.parentElement.classList.toggle('op');
+    }
+  });
+});
+
+// ── Scroll reveal ─────────────────────────────────────────
+var obs = new IntersectionObserver(function(es) {
+  es.forEach(function(e) {
+    if (e.isIntersecting) { e.target.classList.add('vis'); obs.unobserve(e.target); }
+  });
+}, {threshold: 0.12});
+document.querySelectorAll('.rv').forEach(function(el){ obs.observe(el); });
+
+// ── Contact form ──────────────────────────────────────────
+function doSend(e) {
+  e.preventDefault();
+  var d = new FormData(e.target);
+  var body = 'Name: ' + d.get('name') + '\nCompany: ' + d.get('company') + '\nPhone: ' + d.get('phone') + '\nType: ' + d.get('type') + '\n\n' + d.get('message');
+  window.location.href = 'mailto:sales@tellustech.co.kr?subject=Inquiry from ' + d.get('name') + ' (' + d.get('company') + ')&body=' + encodeURIComponent(body);
+}
+</script>
+</body>
+</html>
