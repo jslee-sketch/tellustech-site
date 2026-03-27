@@ -312,9 +312,12 @@ textarea.fc{min-height:120px;resize:vertical}
   .frow{grid-template-columns:1fr}
 }
 /* ── Back to Top ── */
-#totop{position:fixed;bottom:32px;right:32px;z-index:999;width:46px;height:46px;background:var(--red);color:#fff;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(224,0,37,.4);opacity:0;pointer-events:none;transition:opacity .3s,transform .3s,background .2s;font-size:20px;}
-#totop.show{opacity:1;pointer-events:all;}
-#totop:hover{background:var(--red-lt);transform:translateY(-3px);}
+#totop{position:fixed;bottom:36px;right:36px;z-index:999;width:52px;height:52px;background:var(--dark);color:#fff;border:2px solid var(--red);border-radius:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(0,0,0,.35),0 0 0 0 rgba(224,0,37,0);opacity:0;pointer-events:none;transform:translateY(20px);transition:opacity .4s var(--eout),transform .4s var(--eout),background .25s,border-color .25s,box-shadow .25s;}
+#totop svg{width:20px;height:20px;color:var(--red);transition:color .25s,transform .25s var(--eout);}
+#totop.show{opacity:1;pointer-events:all;transform:translateY(0);}
+#totop:hover{background:var(--red);border-color:var(--red);box-shadow:0 8px 28px rgba(224,0,37,.45),0 0 0 6px rgba(224,0,37,.12);}
+#totop:hover svg{color:#fff;transform:translateY(-2px);}
+#totop:active{transform:scale(.93);}
 </style>
 </head>
 <body class="lang-en">
@@ -722,7 +725,7 @@ textarea.fc{min-height:120px;resize:vertical}
 
 <!-- FOOTER -->
 <!-- Back to Top -->
-<button id="totop" onclick="scrollToId('hero')" title="홈으로">&#8679;</button>
+<button id="totop" onclick="scrollToId('hero')" title="Back to Top"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg></button>
 
 <footer id="footer">
   <div class="wrap">
