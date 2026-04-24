@@ -62,6 +62,9 @@ body.lang-en [data-l="en"],body.lang-kr [data-l="kr"],body.lang-vn [data-l="vn"]
 .lb:hover:not(.on){color:#fff}
 .ncta{padding:8px 16px;background:var(--red);color:#fff;font-size:12.5px;font-weight:600;border-radius:3px;transition:background .2s;letter-spacing:.04em;text-transform:uppercase}
 .ncta:hover{background:var(--red-lt)}
+.nadmin{padding:7px 14px;background:transparent;color:rgba(255,255,255,.78);font-size:12.5px;font-weight:600;border:1px solid rgba(255,255,255,.28);border-radius:3px;transition:all .2s;letter-spacing:.04em;text-transform:uppercase;display:inline-flex;align-items:center;gap:6px}
+.nadmin:hover{color:#fff;border-color:rgba(255,255,255,.55);background:rgba(255,255,255,.06)}
+.nadmin::before{content:'';width:6px;height:6px;border-radius:50%;background:#3fb950;box-shadow:0 0 6px rgba(63,185,80,.65)}
 .ntg{display:none;flex-direction:column;gap:5px;padding:4px}
 .ntg span{display:block;width:22px;height:2px;background:#fff;transition:all .3s}
 
@@ -354,6 +357,7 @@ textarea.fc{min-height:120px;resize:vertical}
         <button class="lb" data-ls="kr">KR</button>
         <button class="lb" data-ls="vn">VN</button>
       </div>
+      <a href="https://tellustech-admin-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="nadmin" aria-label="Admin / ERP"><span data-l="en">Admin</span><span data-l="kr">관리자</span><span data-l="vn">Quản trị</span></a>
       <a href="#contact" class="ncta"><span data-l="en">Get Quote</span><span data-l="kr">견적문의</span><span data-l="vn">Báo giá</span></a>
       <button class="ntg" id="ntg" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
