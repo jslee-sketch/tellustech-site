@@ -65,10 +65,22 @@ body.lang-en [data-l="en"],body.lang-kr [data-l="kr"],body.lang-vn [data-l="vn"]
 .ncta:hover{background:var(--red-lt)}
 .adm{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--blue);color:#fff;font-size:11px;font-weight:700;letter-spacing:.05em;transition:background .2s,transform .15s;box-shadow:0 2px 8px rgba(37,99,235,.35)}
 .adm:hover{background:var(--blue-lt);transform:translateY(-1px)}
-.kh{display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 14px;border-radius:19px;background:transparent;color:#fff;font-size:11px;font-weight:700;letter-spacing:.05em;transition:all .2s;border:1.5px solid rgba(255,255,255,.5);gap:4px}
-.kh:hover{background:rgba(255,255,255,.12);border-color:#fff;transform:translateY(-1px)}
+.kh{display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 14px;border-radius:19px;background:transparent;color:#fff;font-size:11px;font-weight:700;letter-spacing:.05em;transition:all .2s var(--ease);border:1.5px solid rgba(255,255,255,.5);gap:4px;white-space:nowrap}
+.kh:hover{background:rgba(255,255,255,.15);border-color:#fff;transform:translateY(-1px);box-shadow:0 4px 12px rgba(255,255,255,.18)}
 #nav.on .kh{color:var(--dark);border-color:var(--mid)}
-#nav.on .kh:hover{background:var(--light);border-color:var(--dark)}
+#nav.on .kh:hover{background:var(--light);border-color:var(--dark);box-shadow:0 4px 12px rgba(0,0,0,.12)}
+@media (max-width:768px){
+  .kh{height:34px;padding:0 10px;font-size:10px;border-radius:17px}
+  .kh span{display:none}
+  .kh::after{content:"PORTAL"}
+  body.lang-kr .kh::after{content:"고객포탈"}
+  body.lang-vn .kh::after{content:"Cổng KH"}
+}
+@media (max-width:480px){
+  .kh{padding:0 8px}
+  .kh::after{content:""}
+  body.lang-kr .kh::after,body.lang-vn .kh::after{content:""}
+}
 .ntg{display:none;flex-direction:column;gap:5px;padding:4px}
 .ntg span{display:block;width:22px;height:2px;background:#fff;transition:all .3s}
 
