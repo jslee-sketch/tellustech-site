@@ -65,6 +65,8 @@ body.lang-en [data-l="en"],body.lang-kr [data-l="kr"],body.lang-vn [data-l="vn"]
 .ncta:hover{background:var(--red-lt)}
 .adm{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--blue);color:#fff;font-size:11px;font-weight:700;letter-spacing:.05em;transition:background .2s,transform .15s;box-shadow:0 2px 8px rgba(37,99,235,.35)}
 .adm:hover{background:var(--blue-lt);transform:translateY(-1px)}
+.kh{display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 14px;border-radius:19px;background:var(--red);color:#fff;font-size:11px;font-weight:700;letter-spacing:.05em;transition:background .2s,transform .15s;box-shadow:0 2px 8px rgba(224,0,37,.35);gap:4px}
+.kh:hover{background:var(--red-lt);transform:translateY(-1px)}
 .ntg{display:none;flex-direction:column;gap:5px;padding:4px}
 .ntg span{display:block;width:22px;height:2px;background:#fff;transition:all .3s}
 
@@ -358,6 +360,7 @@ textarea.fc{min-height:120px;resize:vertical}
         <button class="lb" data-ls="vn">VN</button>
       </div>
       <a href="#contact" class="ncta"><span data-l="en">Get Quote</span><span data-l="kr">견적문의</span><span data-l="vn">Báo giá</span></a>
+      <a href="https://tellustech-admin-production.up.railway.app/login?portal=1" target="_blank" rel="noopener noreferrer" class="kh" aria-label="Customer Portal / 고객 포탈 / Cổng khách hàng" title="Customer Portal / 고객 포탈 / Cổng khách hàng">🛒&nbsp;<span data-l="en">PORTAL</span><span data-l="kr">고객포탈</span><span data-l="vn">Cổng KH</span></a>
       <a href="https://tellustech-admin-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="adm" aria-label="Admin / ERP" title="Admin / ERP">ADM</a>
       <button class="ntg" id="ntg" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
