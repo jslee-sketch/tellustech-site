@@ -96,8 +96,10 @@ body.lang-en [data-l="en"],body.lang-kr [data-l="kr"],body.lang-vn [data-l="vn"]
 .cpmh{padding:12px 18px 10px;font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.48);border-bottom:1px solid rgba(255,255,255,.06);margin-bottom:5px;line-height:1.5;white-space:normal}
 .cpmi{display:block;padding:12px 18px;font-size:15px;font-weight:600;color:rgba(255,255,255,.78);white-space:nowrap;transition:color .15s,background .15s,padding .15s}
 .cpmi:hover,.cpmi:focus-visible{color:#fff;background:rgba(224,0,37,.16);padding-left:24px;outline:none}
-.cpmi.sel{color:#fff}
-.cpmi.sel::after{content:'✓';margin-left:10px;color:var(--red);font-weight:700}
+/* NOTE: not ".sel" — that name is already taken by the hero slide accent bar
+   (.sel{width:30px;height:2px;background:var(--red)}), which collapsed this row */
+.cpmi.cpon{color:#fff}
+.cpmi.cpon::after{content:'✓';margin-left:10px;color:var(--red);font-weight:700}
 /* footer (staff) variant */
 .cpw.sm .cpg{height:34px;border-radius:17px}
 .cpw.sm .cpb{padding:0 13px;gap:6px}
@@ -945,7 +947,7 @@ setLang(lsGet('tl-l') || 'en');
         nameEl.textContent = '';
         root.classList.remove('has');
       }
-      items.forEach(i => i.classList.toggle('sel', i.dataset.co === co));
+      items.forEach(i => i.classList.toggle('cpon', i.dataset.co === co));
     }
 
     const trigger = () => root.classList.contains('has') ? caret : btn;
