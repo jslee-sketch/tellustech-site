@@ -61,26 +61,58 @@ body.lang-en [data-l="en"],body.lang-kr [data-l="kr"],body.lang-vn [data-l="vn"]
 .lb{padding:4px 9px;border-radius:16px;font-size:11px;font-weight:700;color:rgba(255,255,255,.5);transition:all .2s;letter-spacing:.06em}
 .lb.on{background:var(--red);color:#fff}
 .lb:hover:not(.on){color:#fff}
-.ncta{padding:8px 16px;background:var(--red);color:#fff;font-size:12.5px;font-weight:600;border-radius:3px;transition:background .2s;letter-spacing:.04em;text-transform:uppercase}
+.ncta{padding:8px 16px;background:var(--red);color:#fff;font-size:12.5px;font-weight:600;border-radius:3px;transition:background .2s;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
+.lsm{display:none}
 .ncta:hover{background:var(--red-lt)}
-.adm{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--blue);color:#fff;font-size:11px;font-weight:700;letter-spacing:.05em;transition:background .2s,transform .15s;box-shadow:0 2px 8px rgba(37,99,235,.35)}
-.adm:hover{background:var(--blue-lt);transform:translateY(-1px)}
-.kh{display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 14px;border-radius:19px;background:transparent;color:#fff;font-size:11px;font-weight:700;letter-spacing:.05em;transition:all .2s var(--ease);border:1.5px solid rgba(255,255,255,.5);gap:4px;white-space:nowrap}
-.kh:hover{background:rgba(255,255,255,.15);border-color:#fff;transform:translateY(-1px);box-shadow:0 4px 12px rgba(255,255,255,.18)}
-#nav.on .kh{color:var(--dark);border-color:var(--mid)}
-#nav.on .kh:hover{background:var(--light);border-color:var(--dark);box-shadow:0 4px 12px rgba(0,0,0,.12)}
-@media (max-width:768px){
-  .kh{height:34px;padding:0 10px;font-size:10px;border-radius:17px}
-  .kh span{display:none}
-  .kh::after{content:"PORTAL"}
-  body.lang-kr .kh::after{content:"고객포탈"}
-  body.lang-vn .kh::after{content:"Cổng KH"}
-}
-@media (max-width:480px){
-  .kh{padding:0 8px}
-  .kh::after{content:""}
-  body.lang-kr .kh::after,body.lang-vn .kh::after{content:""}
-}
+/* COMPANY PICKER (customer portal / staff ERP) */
+.vh{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.cpw{position:relative;display:inline-flex;align-items:center}
+/* solid light pill + bold near-black text: legible over the light hero photo,
+   the dark scrolled nav and the dark footer alike */
+.cpg{display:inline-flex;align-items:stretch;height:42px;border-radius:21px;border:1.5px solid rgba(0,0,0,.16);background:#fff;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.22);transition:border-color .2s,box-shadow .2s}
+.cpw:hover .cpg,.cpw.op .cpg{border-color:var(--dark);box-shadow:0 5px 18px rgba(0,0,0,.32)}
+.cpb{display:inline-flex;align-items:center;gap:8px;padding:0 14px;color:var(--dark);white-space:nowrap;transition:background .2s}
+.cpb:hover{background:rgba(0,0,0,.07)}
+.cpb:focus-visible,.cpt:focus-visible{outline:2px solid var(--dark);outline-offset:-3px}
+.cpi{font-size:16px;line-height:1}
+.cptx{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;line-height:1.22}
+.cpl{font-size:15px;font-weight:800;letter-spacing:.01em;color:var(--dark)}
+.cpsep,.cpc{display:none}
+.cpc{font-size:15.5px;font-weight:800;letter-spacing:.01em;color:var(--dark)}
+/* chosen -> the label drops to a caption and the company name takes the lead */
+.cpw.has .cpl{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--mid)}
+.cpw.has .cpc{display:block}
+.cpw.has .cpb{padding-right:11px}
+.cpt{display:none;align-items:center;justify-content:center;width:34px;color:var(--dark);border-left:1px solid rgba(0,0,0,.18);transition:background .2s}
+.cpw.has .cpt{display:inline-flex}
+.cpt:hover,.cpw.op .cpt{background:rgba(0,0,0,.07)}
+.cpt svg{width:11px;height:11px;stroke-width:2.2;transition:transform .2s var(--ease)}
+.cpw.op .cpt svg{transform:rotate(180deg)}
+/* dropdown */
+.cpm{position:absolute;top:calc(100% + 9px);right:0;min-width:214px;background:var(--dark2);border:1px solid rgba(255,255,255,.09);border-top:2px solid var(--red);box-shadow:0 14px 34px rgba(0,0,0,.42);padding:0 0 5px;opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .18s,transform .18s var(--ease),visibility 0s .18s;z-index:1100}
+/* visibility flips instantly on open (so the first item can take focus) and
+   only on close is it delayed until the fade finishes */
+.cpw.op .cpm{opacity:1;visibility:visible;transform:translateY(0);transition:opacity .18s,transform .18s var(--ease),visibility 0s}
+.cpmh{padding:12px 18px 10px;font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:rgba(255,255,255,.48);border-bottom:1px solid rgba(255,255,255,.06);margin-bottom:5px;line-height:1.5;white-space:normal}
+.cpmi{display:block;padding:12px 18px;font-size:15px;font-weight:600;color:rgba(255,255,255,.78);white-space:nowrap;transition:color .15s,background .15s,padding .15s}
+.cpmi:hover,.cpmi:focus-visible{color:#fff;background:rgba(224,0,37,.16);padding-left:24px;outline:none}
+.cpmi.sel{color:#fff}
+.cpmi.sel::after{content:'✓';margin-left:10px;color:var(--red);font-weight:700}
+/* footer (staff) variant */
+.cpw.sm .cpg{height:34px;border-radius:17px}
+.cpw.sm .cpb{padding:0 13px;gap:6px}
+.cpw.sm.has .cpb{padding-right:10px}
+/* footer has room for one line: label · company */
+.cpw.sm .cptx{flex-direction:row;align-items:center;gap:6px}
+.cpw.sm .cpl,.cpw.sm.has .cpl{font-size:14px;font-weight:800;letter-spacing:.01em;text-transform:none;color:var(--dark)}
+.cpw.sm.has .cpsep{display:inline;color:var(--gray)}
+.cpw.sm .cpc{font-size:14px;font-weight:800}
+.cpw.sm.has .cpc{display:inline}
+.cpw.sm .cpi{font-size:14px}
+.cpw.sm .cpt{width:30px}
+.cpw.sm .cpm{top:auto;bottom:calc(100% + 9px);right:0;left:auto;transform:translateY(6px)}
+/* staff entry pinned to the bottom-right of the hero, clear of the slide arrows */
+#hstaff{position:absolute;right:34px;bottom:86px;z-index:11}
 .ntg{display:none;flex-direction:column;gap:5px;padding:4px}
 .ntg span{display:block;width:22px;height:2px;background:#fff;transition:all .3s}
 
@@ -288,7 +320,7 @@ textarea.fc{min-height:120px;resize:vertical}
 .fl2 a:hover{color:rgba(255,255,255,.72)}
 .fb{display:flex;align-items:center;justify-content:space-between}
 .fcp{font-size:11.5px;color:rgba(255,255,255,.2)}
-.fleg{display:flex;gap:16px}
+.fleg{display:flex;align-items:center;gap:16px}
 .fleg a{font-size:11.5px;color:rgba(255,255,255,.2);transition:color .2s}
 .fleg a:hover{color:rgba(255,255,255,.44)}
 
@@ -305,6 +337,14 @@ textarea.fc{min-height:120px;resize:vertical}
   .sti{border-bottom:1px solid rgba(255,255,255,.07)}
   .ag,.cg,.cog{gap:40px}
   .ft{grid-template-columns:1fr 1fr}
+}
+@media(max-width:1100px){
+  /* nav links + logo + picker all compete here (English labels are widest),
+     so the picker drops to company-name-only well before the mobile breakpoint */
+  .nl{padding:8px 9px}
+  .cpw:not(.sm).has .cpi{display:none}
+  .cpw:not(.sm).has .cpl{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .cpw:not(.sm).has .cpb{padding:0 9px 0 13px}
 }
 @media(max-width:768px){
   section{padding:64px 0}
@@ -329,6 +369,28 @@ textarea.fc{min-height:120px;resize:vertical}
   .fb{flex-direction:column;gap:8px;text-align:center}
   .sarr{display:none}
   .frow{grid-template-columns:1fr}
+  /* company picker — 44px touch targets */
+  .cpg{height:46px;border-radius:23px}
+  .cpt{width:44px}
+  .cpw.sm .cpg{height:40px;border-radius:20px}
+  .cpw.sm .cpt{width:42px}
+  /* slide arrows are hidden here, but the dots are not — sit above them */
+  #hstaff{right:16px;bottom:72px}
+  .fleg{flex-wrap:wrap;justify-content:center;align-items:center;gap:14px}
+  /* clear the fixed Back-to-Top button, which otherwise covers the
+     staff-login caret when scrolled to the bottom */
+  #footer{padding-bottom:88px}
+  /* the top bar cannot hold logo + languages + company name + menu at 360px.
+     Languages move into the hamburger panel; the company name stays put. */
+  .nr .ls{display:none}
+  .lsm{display:block;padding:2px 0 14px;margin-bottom:8px;border-bottom:1px solid rgba(255,255,255,.07)}
+  .lsm .ls{display:inline-flex}
+}
+@media(max-width:600px){
+  /* Once a company is chosen the company name is what must stay visible —
+     drop the label and icon, never the company. Label stays in the a11y tree. */
+  .cpw:not(.sm) .cpc{font-size:14px}
+  .cpm{min-width:0;width:max-content;max-width:calc(100vw - 40px)}
 }
 /* ── Back to Top ── */
 #totop{position:fixed;bottom:36px;right:36px;z-index:999;width:52px;height:52px;background:var(--dark);color:#fff;border:2px solid var(--red);border-radius:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(0,0,0,.35),0 0 0 0 rgba(224,0,37,0);opacity:0;pointer-events:none;transform:translateY(20px);transition:opacity .4s var(--eout),transform .4s var(--eout),background .25s,border-color .25s,box-shadow .25s;}
@@ -346,6 +408,7 @@ textarea.fc{min-height:120px;resize:vertical}
   <div class="ni">
     <a href="#" class="logo"><img src="assets/img/logo/h1_logo.gif" alt="Tellustech"></a>
     <ul class="nm" id="nm">
+      <li class="lsm"><div class="ls"><button class="lb" data-ls="en">EN</button><button class="lb" data-ls="kr">KR</button><button class="lb" data-ls="vn">VN</button></div></li>
       <li class="ni-item">
         <a class="nl" href="#about"><span data-l="en">Company</span><span data-l="kr">회사소개</span><span data-l="vn">Công ty</span></a>
         <div class="drop">
@@ -374,9 +437,18 @@ textarea.fc{min-height:120px;resize:vertical}
         <button class="lb" data-ls="vn">VN</button>
       </div>
       <a href="#contact" class="ncta"><span data-l="en">Get Quote</span><span data-l="kr">견적문의</span><span data-l="vn">Báo giá</span></a>
-      <a href="https://tellustech-admin-production.up.railway.app/login?portal=1" target="_blank" rel="noopener noreferrer" class="kh" aria-label="Customer Portal / 고객 포탈 / Cổng khách hàng" title="Customer Portal / 고객 포탈 / Cổng khách hàng">🛒&nbsp;<span data-l="en">PORTAL</span><span data-l="kr">고객포탈</span><span data-l="vn">Cổng KH</span></a>
-      <a href="https://tellustech-admin-production.up.railway.app" target="_blank" rel="noopener noreferrer" class="adm" aria-label="Admin / ERP" title="Admin / ERP">ADM</a>
-      <button class="ntg" id="ntg" aria-label="Menu"><span></span><span></span><span></span></button>
+      <div class="cpw" data-key="tts_portal_company">
+        <div class="cpg">
+          <a class="cpb" target="_blank" rel="noopener noreferrer"><span class="cpi" aria-hidden="true">🔑</span><span class="cptx"><span class="cpl"><span data-l="en">Customer Portal</span><span data-l="kr">고객포털</span><span data-l="vn">Cổng khách hàng</span></span><span class="cpc"></span></span></a>
+          <button class="cpt" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="cpm-portal"><span class="vh"><span data-l="en">Change company</span><span data-l="kr">회사 변경</span><span data-l="vn">Đổi công ty</span></span><svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><polyline points="1,1 5,5 9,1"/></svg></button>
+        </div>
+        <div class="cpm" id="cpm-portal" role="menu">
+          <div class="cpmh"><span data-l="en">Which company?</span><span data-l="kr">어느 회사로 접속하시겠습니까?</span><span data-l="vn">Bạn muốn truy cập công ty nào?</span></div>
+          <a class="cpmi" role="menuitem" data-co="TV" href="https://tv.erp.tellustech.co.kr/portal" target="_blank" rel="noopener noreferrer">Tellustech Vina</a>
+          <a class="cpmi" role="menuitem" data-co="VR" href="https://vr.erp.tellustech.co.kr/portal" target="_blank" rel="noopener noreferrer">Vietrental</a>
+        </div>
+      </div>
+      <button class="ntg" id="ntg" type="button" aria-label="Menu" aria-controls="nm" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
 </nav>
@@ -437,6 +509,18 @@ textarea.fc{min-height:120px;resize:vertical}
     <div class="sdot on" onclick="goSl(0)"></div><div class="sdot" onclick="goSl(1)"></div><div class="sdot" onclick="goSl(2)"></div><div class="sdot" onclick="goSl(3)"></div><div class="sdot" onclick="goSl(4)"></div>
   </div>
   <div class="sarr"><div class="sa" onclick="prevSl()">&#8592;</div><div class="sa" onclick="nextSl()">&#8594;</div></div>
+  <!-- staff-only entry: first screen, bottom right -->
+  <div class="cpw sm" id="hstaff" data-key="tts_erp_company">
+    <div class="cpg">
+      <a class="cpb" target="_blank" rel="noopener noreferrer"><span class="cpi" aria-hidden="true">🔒</span><span class="cptx"><span class="cpl"><span data-l="en">Staff Login</span><span data-l="kr">직원 로그인</span><span data-l="vn">Đăng nhập nhân viên</span></span><span class="cpsep" aria-hidden="true">·</span><span class="cpc"></span></span></a>
+      <button class="cpt" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="cpm-staff"><span class="vh"><span data-l="en">Change company</span><span data-l="kr">회사 변경</span><span data-l="vn">Đổi công ty</span></span><svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><polyline points="1,1 5,5 9,1"/></svg></button>
+    </div>
+    <div class="cpm" id="cpm-staff" role="menu">
+      <div class="cpmh"><span data-l="en">Which company?</span><span data-l="kr">어느 회사로 접속하시겠습니까?</span><span data-l="vn">Bạn muốn truy cập công ty nào?</span></div>
+      <a class="cpmi" role="menuitem" data-co="TV" href="https://tv.erp.tellustech.co.kr" target="_blank" rel="noopener noreferrer">Tellustech Vina</a>
+      <a class="cpmi" role="menuitem" data-co="VR" href="https://vr.erp.tellustech.co.kr" target="_blank" rel="noopener noreferrer">Vietrental</a>
+    </div>
+  </div>
 </section>
 
 <!-- STATS -->
@@ -801,15 +885,132 @@ function swTab(id, el) {
   document.getElementById('pp-' + id).classList.add('on');
 }
 
+// ── Safe storage ─────────────────────────────────────────
+// iOS Safari private mode throws on localStorage access; an uncaught throw
+// here would kill every script below it.
+function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+function lsSet(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+
 // ── Language ─────────────────────────────────────────────
 function setLang(l) {
   document.body.classList.remove('lang-en','lang-kr','lang-vn');
   document.body.classList.add('lang-' + l);
   document.querySelectorAll('.lb').forEach(b => b.classList.toggle('on', b.dataset.ls === l));
-  localStorage.setItem('tl-l', l);
+  lsSet('tl-l', l);
 }
 document.querySelectorAll('.lb').forEach(b => b.addEventListener('click', () => setLang(b.dataset.ls)));
-setLang(localStorage.getItem('tl-l') || 'en');
+setLang(lsGet('tl-l') || 'en');
+
+// ── Company picker (customer portal / staff ERP) ──────────
+// The company is the address. Both pickers remember their choice separately
+// and always show the chosen company on the button — never silently.
+(function () {
+  const NAMES = { TV: 'Tellustech Vina', VR: 'Vietrental' };
+  const pickers = [];
+
+  document.querySelectorAll('.cpw').forEach(root => {
+    const key    = root.dataset.key;
+    const btn    = root.querySelector('.cpb');
+    const caret  = root.querySelector('.cpt');
+    const menu   = root.querySelector('.cpm');
+    const nameEl = root.querySelector('.cpc');
+    const items  = Array.from(root.querySelectorAll('.cpmi'));
+
+    const hrefFor = co => {
+      const hit = items.find(i => i.dataset.co === co);
+      return hit ? hit.href : null;
+    };
+
+    // Chosen -> the anchor carries a real href, so the browser navigates
+    // natively. Nothing async, nothing to popup-block.
+    function apply(co) {
+      const href = co ? hrefFor(co) : null;
+      if (href) {
+        btn.href = href;
+        btn.removeAttribute('role');
+        btn.removeAttribute('tabindex');
+        btn.removeAttribute('aria-haspopup');
+        btn.removeAttribute('aria-expanded');
+        btn.removeAttribute('aria-controls');
+        nameEl.textContent = NAMES[co];
+        root.classList.add('has');
+      } else {
+        co = null;
+        btn.removeAttribute('href');
+        btn.setAttribute('role', 'button');
+        btn.setAttribute('tabindex', '0');
+        btn.setAttribute('aria-haspopup', 'true');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-controls', menu.id);
+        nameEl.textContent = '';
+        root.classList.remove('has');
+      }
+      items.forEach(i => i.classList.toggle('sel', i.dataset.co === co));
+    }
+
+    const trigger = () => root.classList.contains('has') ? caret : btn;
+
+    function open() {
+      pickers.forEach(p => { if (p.root !== root) p.close(false); });
+      root.classList.add('op');
+      caret.setAttribute('aria-expanded', 'true');
+      if (!btn.hasAttribute('href')) btn.setAttribute('aria-expanded', 'true');
+      // flush styles first: a visibility:hidden element cannot take focus
+      void menu.offsetHeight;
+      if (items.length) items[0].focus();
+    }
+    function close(refocus) {
+      if (!root.classList.contains('op')) return;
+      root.classList.remove('op');
+      caret.setAttribute('aria-expanded', 'false');
+      if (!btn.hasAttribute('href')) btn.setAttribute('aria-expanded', 'false');
+      if (refocus) trigger().focus();
+    }
+
+    // No company chosen yet -> the whole button opens the picker.
+    btn.addEventListener('click', e => {
+      if (!btn.hasAttribute('href')) { e.preventDefault(); open(); }
+    });
+    btn.addEventListener('keydown', e => {
+      if (btn.hasAttribute('href')) return;
+      if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') { e.preventDefault(); open(); }
+    });
+
+    caret.addEventListener('click', e => {
+      e.preventDefault();
+      e.stopPropagation();
+      root.classList.contains('op') ? close(true) : open();
+    });
+
+    items.forEach((it, i) => {
+      it.addEventListener('click', () => {
+        lsSet(key, it.dataset.co);
+        apply(it.dataset.co);
+        close(false);
+      });
+      it.addEventListener('keydown', e => {
+        if (e.key === 'ArrowDown')    { e.preventDefault(); items[(i + 1) % items.length].focus(); }
+        else if (e.key === 'ArrowUp') { e.preventDefault(); items[(i - 1 + items.length) % items.length].focus(); }
+      });
+    });
+
+    root.addEventListener('keydown', e => {
+      if (e.key === 'Escape' || e.key === 'Esc') { e.preventDefault(); close(true); }
+    });
+    root.addEventListener('focusout', e => {
+      if (!root.contains(e.relatedTarget)) close(false);
+    });
+
+    pickers.push({ root, close });
+
+    const saved = lsGet(key);
+    apply(saved === 'TV' || saved === 'VR' ? saved : null);
+  });
+
+  document.addEventListener('click', e => {
+    pickers.forEach(p => { if (!p.root.contains(e.target)) p.close(false); });
+  });
+})();
 
 // ── Scroll helper ─────────────────────────────────────────
 function scrollToId(id) {
@@ -851,6 +1052,18 @@ document.querySelectorAll('a[href^="#"]').forEach(function(link) {
     document.querySelectorAll('.ni-item').forEach(function(i){ i.classList.remove('op'); });
   });
 });
+
+// ── Mobile: 햄버거 메뉴 토글 ─────────────────────────────
+// #ntg had no handler at all — the mobile menu never opened.
+var ntgBtn = document.getElementById('ntg');
+var nmEl   = document.getElementById('nm');
+if (ntgBtn && nmEl) {
+  ntgBtn.addEventListener('click', function () {
+    var opened = nmEl.classList.toggle('op');
+    ntgBtn.setAttribute('aria-expanded', opened ? 'true' : 'false');
+    if (!opened) document.querySelectorAll('.ni-item').forEach(function(i){ i.classList.remove('op'); });
+  });
+}
 
 // ── Mobile: 드롭다운 부모 메뉴 토글 ──────────────────────
 document.querySelectorAll('.ni-item > .nl').forEach(function(l) {
